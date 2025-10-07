@@ -1,0 +1,49 @@
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+
+# Артефакты сборки и кэш
+*.out
+*.pyc
+*.o
+*.so
+*.exe
+.cache/
+tmp/
+dist/
+build/
+
+# Секреты и токены
+.env
+.env.*
+*.key
+*.pem
+.terraform/
+
+# Терраформ переменные и state-файлы
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# IDE/редактор
+.idea/
+.vscode/
+*.code-workspace
+
+# Mac OS
+.DS_Store
+
+# Bash-скрипты и временные shell-файлы
+*.bak
+*.sh~
+
+# Docker, если используется
+docker-compose.override.yml
+
+# Системные каталоги
+node_modules/
+__pycache__/

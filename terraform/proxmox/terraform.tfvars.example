@@ -1,0 +1,13 @@
+proxmox_api_url = "https://192.168.1.112:8006/api2/json"
+proxmox_user = "root@pam"
+proxmox_password = "SuperSecretPass123"
+proxmox_node = "proxmox-node1"
+storage_name = "local-lvm"
+pfsense_template = "pfsense-template"
+ubuntu_template = "ubuntu-2004-template"
+k8s_master_count = 3
+k8s_worker_count = 3
+student_vm_count = 10
+ci_user = "ubuntu"
+ci_password = "UbuntuPass2025"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDTvFGbg80jbzd7Bpb11vIINACk4Q3sGPPrH2Xt36GsFPrqRJIFeQ+1uzf15nnQePIgR4q47rVfNp2aExknp3dNM5YKfVQxFMQjJA7cz33G1np7cZvStdeVlxBuDMjorH3FuHmU6fMKOHL5lmhDzNvPkvYcsYVOsrpKX0YWHFEsi7cEhc2otqxQrUc5E71poM2O4imANlzB4V/nrxaL+mdINUGbaSgwfR/joOM+GiKdkyjfnvB948oXaBUz0Z1Ul9gIeYxqavHHo0gHeLRY7C5Jj+tFQ1L7VLVDC85fcI0/qvEJkKpEBK5q5RMWcG2Q6IdFqucz1UwY2k4sELOe1DibUbFL8mhmmxqVg6XPw+/LGeXRMQWoC1RLbDNXcuJYEbNxGG48CXyThWgnpQ/QYdfvhc4RQf1lgtKWC9HycnoE5BKiodDcQEPdnjzMfJCwMllrD89TIQ0X7Q6Z8vQevT7NOcS1gyvt08vkN+9RhgaG0jGKOgCZ3z4VDkfFw8L9d1M54oKjg9wc3csbUvr9W2RdaE/KIwJnbfF9lC2N3ZEIq8rzFjr49VcVfmVvjsd9Ze4rSMPf4AdhHrijepGRc8nB8dfuNYPEt1wDYRAbcPr9N8fovH9zZjXrqJtH7NgKjC1wKZEePJ/xlMJzxPJF6KCQB1Di2ee17md4VRw4REUHWw== your_email@example.com"  # Ваш публичный SSH ключ

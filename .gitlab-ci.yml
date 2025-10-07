@@ -1,0 +1,166 @@
+stages:
+  - validate
+  - build
+  - test
+  - deploy-dev
+  - deploy-staging
+  - deploy-production
+
+variables:
+  DOCKER_REGISTRY: "registry.gitlab.com"
+  PROJECT_PATH: "$CI_PROJECT_PATH"
+  TF_VERSION: "1.5.7"
+  ANSIBLE_VERSION: "8.5.0"
+
+# Terraform validation
+terraform-validate:
+  stage: validate
+  image: hashicorp/terraform:$TF_VERSION
+  before_script:
+    - cd terraform/proxmox
+  script:
+    - terraform fmt -check
+    - terraform init -backend=false
+    - terraform validate
+  only:
+    changes:
+      - terraform/**/*
+
+# Ansible validation
+ansible-validate:
+  stage: validate
+  image: quay.io/ansible/ansible-runner:latest
+  script:
+    - cd ansible
+    - ansible-playbook --syntax-check playbooks/*.yml
+    - ansible-lint playbooks/
+  only:
+    changes:
+      - ansible/**/*
+
+# Build Docker images
+build-vulnerable-app:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: "/certs"
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cd docker/images/vulnerable-web
+    - docker build -t $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA .
+    - docker push $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA
+    - docker tag $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE/vulnerable-web:latest
+    - docker push $CI_REGISTRY_IMAGE/vulnerable-web:latest
+  only:
+    changes:
+      - docker/images/vulnerable-web/**/*
+
+build-attack-tools:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: "/certs"
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cd docker/images/attack-tools
+    - docker build -t $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA .
+    - docker push $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA
+    - docker tag $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE/attack-tools:latest
+    - docker push $CI_REGISTRY_IMAGE/attack-tools:latest
+  only:
+    changes:
+      - docker/images/attack-tools/**/*
+
+# Security testing
+security-scan:
+  stage: test
+  image: securecodewarrior/docker-security-scanner
+  script:
+    - docker run --rm -v /var/run/docker.sock:/var/run/docker.sock 
+        aquasecurity/trivy image $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA
+  allow_failure: true
+
+# Deploy to Development
+deploy-dev:
+  stage: deploy-dev
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="dev.tfvars" -out=dev.plan
+    - terraform apply -auto-approve dev.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/dev playbooks/site.yml
+  environment:
+    name: development
+    url: http://dev.cyber-range.local
+  only:
+    - develop
+
+# Deploy to Staging
+deploy-staging:
+  stage: deploy-staging
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="staging.tfvars" -out=staging.plan
+    - terraform apply -auto-approve staging.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/staging playbooks/site.yml
+  environment:
+    name: staging
+    url: http://staging.cyber-range.local
+  only:
+    - main
+  when: manual
+
+# Deploy to Production
+deploy-production:
+  stage: deploy-production
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="production.tfvars" -out=prod.plan
+    - terraform apply -auto-approve prod.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/production playbooks/site.yml
+  environment:
+    name: production
+    url: http://cyber-range.local
+  only:
+    - tags
+  when: manual
+
+# Cleanup old deployments
+cleanup:
+  stage: deploy-production
+  image: hashicorp/terraform:$TF_VERSION
+  script:
+    - cd terraform/proxmox
+    - terraform init
+    - terraform destroy -auto-approve -var-file="old.tfvars"
+  when: manual
+  only:
+    - main

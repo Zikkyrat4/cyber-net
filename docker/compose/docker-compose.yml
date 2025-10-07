@@ -1,0 +1,94 @@
+version: '3.8'
+
+services:
+  # Vulnerable Web Application
+  vulnerable-web:
+    build: 
+      context: ./docker/images/vulnerable-web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:5000"
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=sqlite:///app.db
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - cyber-range-net
+
+  # Monitoring Stack
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+    networks:
+      - cyber-range-net
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - cyber-range-net
+
+  # Attack Tools Container
+  kali-tools:
+    build:
+      context: ./docker/images/attack-tools
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./shared:/shared
+    networks:
+      - cyber-range-net
+    depends_on:
+      - vulnerable-web
+
+  # Network Scanner
+  nmap-scanner:
+    image: instrumentisto/nmap
+    command: sleep infinity
+    networks:
+      - cyber-range-net
+
+  # Vulnerable Database
+  mysql-vuln:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password123
+      - MYSQL_DATABASE=vulndb
+      - MYSQL_USER=webapp
+      - MYSQL_PASSWORD=webapp123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - cyber-range-net
+
+volumes:
+  prometheus_data:
+  grafana_data:
+  mysql_data:
+
+networks:
+  cyber-range-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
