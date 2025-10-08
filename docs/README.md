@@ -15,8 +15,7 @@
 - **Prometheus + Grafana** - мониторинг
 - **GitLab CI/CD** - непрерывная интеграция и развертывание
 
-![Uploading cyber_range_architecture.png…]()
-
+<img width="4770" height="3572" alt="cyber_range_architecture" src="https://github.com/user-attachments/assets/e6f6abda-1fb4-4993-8338-d39cdcd3bade" />
 
 ## 🚀 Быстрый старт
 
