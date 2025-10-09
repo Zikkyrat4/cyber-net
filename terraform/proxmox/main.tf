@@ -55,7 +55,7 @@ resource "proxmox_vm_qemu" "pfsense" {
     slot    = "scsi0"
     storage = var.storage_name
     type    = "disk"
-    size    = "20G"
+    size    = "15G"
   }
 
   os_type = "other"
@@ -120,7 +120,7 @@ resource "proxmox_vm_qemu" "k8s_worker" {
   target_node = var.proxmox_node
   clone       = var.ubuntu_template
 
-  memory = 8192
+  memory = 4096
   
   cpu {
     cores = 4
@@ -138,7 +138,7 @@ resource "proxmox_vm_qemu" "k8s_worker" {
     slot    = "scsi0"
     storage = var.storage_name
     type    = "disk"
-    size    = "80G"
+    size    = "40G"
   }
 
   os_type = "cloud-init"
@@ -184,7 +184,7 @@ resource "proxmox_vm_qemu" "student_vms" {
     slot    = "scsi0"
     storage = var.storage_name
     type    = "disk"
-    size    = "20G"
+    size    = "15G"
   }
 
   os_type = "cloud-init"
