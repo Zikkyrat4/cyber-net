@@ -75,7 +75,7 @@ resource "proxmox_vm_qemu" "k8s_master" {
   target_node = var.proxmox_node
   clone       = var.ubuntu_template
 
-  memory = 4096
+  memory = 2048
   
   cpu {
     cores = 2
@@ -123,7 +123,7 @@ resource "proxmox_vm_qemu" "k8s_worker" {
   memory = 4096
   
   cpu {
-    cores = 4
+    cores = 2
     sockets = 1
   }
 
@@ -178,6 +178,7 @@ resource "proxmox_vm_qemu" "student_vms" {
     model  = "virtio"
     bridge = "vmbr1"
     tag    = 100 + count.index  # VLAN для изоляции студентов
+    vhost  = false
   }
 
   disk {
