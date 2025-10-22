@@ -82,6 +82,11 @@ resource "proxmox_vm_qemu" "k8s_master" {
     sockets = 1
   }
 
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
+
 
   network {
     id     = 0
@@ -94,6 +99,14 @@ resource "proxmox_vm_qemu" "k8s_master" {
     storage = var.storage_name
     type    = "disk"
     size    = "20G"
+  }
+
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
   }
 
   os_type = "cloud-init"
@@ -141,6 +154,14 @@ resource "proxmox_vm_qemu" "k8s_worker" {
     size    = "40G"
   }
 
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
+  }
+
   os_type = "cloud-init"
 
   # Cloud-init конфигурация
@@ -177,8 +198,7 @@ resource "proxmox_vm_qemu" "student_vms" {
     id     = 0
     model  = "virtio"
     bridge = "vmbr1"
-    tag    = 100 + count.index  # VLAN для изоляции студентов
-    vhost  = false
+    tag    = 100 + count.index  # VLAN для изоляции студентов 
   }
 
   disk {
@@ -188,11 +208,20 @@ resource "proxmox_vm_qemu" "student_vms" {
     size    = "15G"
   }
 
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
+  }
+
   os_type = "cloud-init"
 
   ciuser     = var.ci_user
   cipassword = var.ci_password
   sshkeys    = var.ssh_public_key
+  
 
   ipconfig0 = "ip=192.168.${100 + count.index}.10/24,gw=192.168.${100 + count.index}.1"
 }

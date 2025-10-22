@@ -98,6 +98,8 @@ iface vmbr1 inet static
     bridge_ports none
     bridge_stp off
     bridge_fd 0
+    bridge-vlan-aware yes
+    bridge-vids 2-4094
 
 auto vmbr2
 iface vmbr2 inet static
@@ -105,6 +107,8 @@ iface vmbr2 inet static
     bridge_ports none
     bridge_stp off
     bridge_fd 0
+    bridge-vlan-aware yes
+    bridge-vids 2-4094
 ```
 
 ## Установка зависимостей на управляющей машине
