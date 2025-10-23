@@ -87,6 +87,10 @@ resource "proxmox_vm_qemu" "k8s_master" {
   bootdisk = "scsi0"
   scsihw   = "virtio-scsi-pci"
 
+  serial {
+    id   = 0
+    type = "socket"
+  }
 
   network {
     id     = 0
@@ -134,12 +138,20 @@ resource "proxmox_vm_qemu" "k8s_worker" {
   clone       = var.ubuntu_template
 
   memory = 4096
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
   
   cpu {
     cores = 2
     sockets = 1
   }
 
+  serial {
+    id   = 0
+    type = "socket"
+  }
 
   network {
     id     = 0
@@ -187,12 +199,21 @@ resource "proxmox_vm_qemu" "student_vms" {
   clone       = var.ubuntu_template
 
   memory = 2048
+
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
   
   cpu {
     cores = 2
     sockets = 1
   }
 
+  serial {
+    id   = 0
+    type = "socket"
+  }
 
   network {
     id     = 0
